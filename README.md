@@ -8,6 +8,7 @@ npm install
 ```
 
 ## Rebuilding styleguide
+Rebuilding styleguide happens using gulp. Gulp compiles the SASS and creates a new version of the styleguide.
 ```
 gulp
 ```
