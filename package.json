@@ -1,0 +1,16 @@
+{
+  "name": "aava-styleguide",
+  "version": "1.0.0",
+  "description": "Living styleguide for Lääkärikeskus Aava",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-shell": "^0.5.2",
+    "kss": "^2.4.0",
+    "run-sequence": "^1.1.5"
+  }
+}
