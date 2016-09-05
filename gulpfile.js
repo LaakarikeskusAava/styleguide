@@ -10,11 +10,12 @@ gulp.task('clean', function() {
 
 gulp.task('styleguide', shell.task([
     // kss-node [source folder of files to parse] [destination folder] --template [location of template files]
-    'kss-node <%= source %> <%= destination %>'
+    'kss-node --config <%= config %> <%= source %> <%= destination %>'
   ], {
     templateData: {
       source: 'styles',
-      destination: 'styleguide'
+      destination: 'styleguide',
+      config: './kss-config.json'
     }
   }
 ));
@@ -27,7 +28,11 @@ gulp.task('compass', function() {
     }))
     .pipe(gulp.dest('app/assets/temp'));
 });
+gulp.task('images', function() {
+  gulp.src(['styles/images/**'])
+    .pipe(gulp.dest('styleguide/public/images'));
+});
 
 gulp.task('default', function() {
-  runSequence(['clean', 'styleguide', 'compass']);
+  runSequence(['clean', 'styleguide'], 'compass', 'images');
 });

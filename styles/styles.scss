@@ -1,8 +1,16 @@
+@import "./_variables.scss";
+@import "./_base.scss";
+
 // Buttons
 //
-// Buttons stuff
+// Weight: 1
 //
-// Weight: -1
+// Style guide: buttons
+@import "./components/buttons/buttons.scss";
+
+// Lists
 //
-// Style guide: components
-@import "./components/buttons.scss";
+// Weight: 2
+//
+// Style guide: lists
+@import "./components/lists/lists.scss";

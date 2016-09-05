@@ -1,0 +1,78 @@
+$icon_height: 13px;
+$icon_width: 10px;
+
+// Call to action submit or link buttons
+//
+// Markup: buttons.hbs
+//
+//.c-button--blue - This is the most common variation of the button. This should
+//                  be used on all of the submit buttons.
+//.c-button--grey - This variation should be used on secondary buttons.
+//
+// Style guide: buttons.call-to-action
+.c-button {
+  font-size: 1em;
+  line-height: 1.2em;
+  display: inline-block;
+  margin: 0; // reset system.theme.css margin
+  background-color: white;
+  color: $paragraphs;
+  border: 1px solid $border-grey;
+  border-radius: 5px;
+  padding: 0.4em 17px 0.55em 17px; // bottom padding 3px more than top because of Lato's strange baseline
+  &:hover {
+    background-color: $slightly-dark-grey;
+  }
+}
+
+.c-button--blue {
+  background-color: $blue;
+  color: $white;
+  border: 1px solid $blue;
+  &:hover {
+    background-color: $white;
+    color: $blue;
+  }
+}
+
+.c-button--grey {
+  background-color: $light-grey;
+  color: $white;
+  border: 1px solid transparent;
+  &:hover {
+    background-color: $white;
+    border: 1px solid $grey;
+    color: $grey;
+  }
+}
+
+.c-button--with-arrow {
+  text-indent: -999em;
+  padding-right: 0;
+  position: relative;
+
+  &.c-button--blue {
+    background: $white;
+    border: 0;
+  }
+
+  &:after {
+    content: "";
+    background: image-url('arrow-blue.svg') no-repeat center center / contain;
+    height: $icon_height;
+    margin-top: -1/2 * $icon_height;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: $icon_width;
+  }
+}
+
+.c-button--move-back {
+  background: transparent image-url('arrow-blue-thick-left.png') no-repeat 1px center;
+  background-size: auto 1em;
+  border: none;
+  color: $paragraphs;
+  padding-left: 26px;
+}
+

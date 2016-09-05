@@ -1,0 +1,20 @@
+// Simple lists
+//
+// Markup: lists.hbs
+//
+// Style guide: lists.simple
+.c-simple-list__title {
+  border-bottom: 1px solid $border-grey;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+.c-list-item {
+  border-bottom: 1px solid $border-grey;
+  color: $paragraphs;
+  display: block;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+
+  background: url('images/arrow-blue.svg') right 7px no-repeat;
+  background-size: 18px 14px;
+}
