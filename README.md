@@ -12,3 +12,7 @@ Rebuilding styleguide happens using gulp. Gulp compiles the SASS and creates a n
 ```
 gulp
 ```
+
+## Updating Github pages
+
+After committing your changes to master you can use the `gh-pages.sh` script to move changes to styleguide over to the gh-pages branch real quick.
