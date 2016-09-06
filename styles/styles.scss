@@ -7,6 +7,8 @@
 //
 // Style guide: typography
 @import "components/headings/headings.scss";
+@import "components/body/body.scss";
+@import "components/lists/lists.scss";
 
 // Buttons
 //
@@ -21,3 +23,13 @@
 //
 // Style guide: lists
 @import "./components/lists/lists.scss";
+
+// Forms
+//
+// Style individual form controls and utilize common layouts.
+//
+// Weight: 3
+//
+// Style guide: forms
+@import "./components/forms/forms.scss";
+@import "./components/forms/example/example.scss";

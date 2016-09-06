@@ -1,0 +1,28 @@
+// Lists
+//
+// Weight: 3
+//
+// Style guide: typography.lists
+
+ul, ol {
+  margin: 0 0 0 25px;
+  padding: 0 0 20px 0;
+  border: 0;
+}
+
+// Unordered lists
+//
+// A list of items in which the order does <em>not</em> explicitly matter.
+//
+// Markup: unordered.hbs
+//
+// Style guide: typography.lists.unordered
+
+
+// Ordered lists
+//
+// A list of items in which the order <em>does</em> explicitly matter.
+//
+// Markup: ordered.hbs
+//
+// Style guide: typography.lists.ordered
