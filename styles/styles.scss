@@ -6,9 +6,9 @@
 // Weight: 0
 //
 // Style guide: typography
-@import "components/headings/headings.scss";
-@import "components/body/body.scss";
-@import "components/lists/lists.scss";
+@import "base/headings/headings.scss";
+@import "base/body/body.scss";
+@import "base/list/list.scss";
 
 // Buttons
 //
@@ -22,7 +22,7 @@
 // Weight: 2
 //
 // Style guide: lists
-@import "./components/lists/lists.scss";
+@import "./components/list/list.scss";
 
 // Forms
 //
@@ -33,3 +33,13 @@
 // Style guide: forms
 @import "./components/forms/forms.scss";
 @import "./components/forms/example/example.scss";
+
+// Loading effects
+//
+// When something on the UI is on a loading state, loading effect should take a
+// place.
+//
+// Weight: 4
+//
+// Style guide: loaders
+@import "./components/content-loading/content-loading.scss";

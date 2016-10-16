@@ -1,0 +1,55 @@
+// Content loading
+//
+// This is loading animation purely designed for content lazy loading. There is
+// multiple different variations to fit different kinds of content.
+//
+// Markup: content-loading.hbs
+//
+// .content-loading--one-word - This is used to placeholder a single word.
+// .content-loading--half-width - This is used to fill half of the space.
+// .content-loading--two-thirds-width - This is used to fill two thirds of the space.
+// .content-loading--vertical-space - This variation can be used if multiple loading effects are placed above each other.
+//
+// Style guide: loaders.content
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.content-loading {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background-color: $border-grey-v2;
+  background: linear-gradient(to right, $border-grey-v2 8%, $border-grey 18%, $border-grey-v2 33%);
+  background-size: 800px 104px;
+  position: relative;
+  height: 17px;
+}
+
+.content-loading--full-width {
+  width: 100%;
+}
+
+.content-loading--one-word {
+  width: 50px;
+}
+
+.content-loading--two-thirds-width {
+  width: 66%;
+}
+
+.content-loading--half-width {
+  width: 50%;
+}
+
+.content-loading--vertical-space {
+  margin-bottom: 13px;
+}

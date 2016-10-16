@@ -41,14 +41,6 @@
           <span class="kss-nav__ref">2</span
           ><span class="kss-nav__name">Buttons</span>
         </a>
-        <ul class="kss-nav__menu-child">
-            <li class="kss-nav__menu-item">
-              <a href="section-buttons.html#kssref-buttons-call-to-action">
-                <span class="kss-nav__ref ">2.1</span
-                ><span class="kss-nav__name">Call to action submit or link buttons</span>
-              </a>
-            </li>
-        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-lists.html">
@@ -67,48 +59,66 @@
           <span class="kss-nav__ref">5</span
           ><span class="kss-nav__name">Loading effects</span>
         </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-loaders.html#kssref-loaders-content">
+                <span class="kss-nav__ref ">5.1</span
+                ><span class="kss-nav__name">Content loading</span>
+              </a>
+            </li>
+        </ul>
       </li>
     </ul>
   </nav>
 </div>
 <article role="main" class="kss-main">
 
-      <div     id="kssref-buttons" class="kss-section kss-section--depth-1">
+      <div     id="kssref-loaders" class="kss-section kss-section--depth-1">
 
     <div class="kss-style">
       <h1 class="kss-title kss-title--level-1">
-        <a class="kss-title__permalink" href="#kssref-buttons">
+        <a class="kss-title__permalink" href="#kssref-loaders">
           <span class="kss-title__ref">
-              2
+              5
             <span class="kss-title__permalink-hash">
-                #buttons
+                #loaders
             </span>
           </span>
-          Buttons
+          Loading effects
         </a>
       </h1>
 
 
+      <div class="kss-description">
+        <p>When something on the UI is on a loading state, loading effect should take a
+place.</p>
+
+      </div>
     </div>
 
 
       </div>
-      <section id="kssref-buttons-call-to-action" class="kss-section kss-section--depth-2">
+      <section id="kssref-loaders-content" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-buttons-call-to-action">
+        <a class="kss-title__permalink" href="#kssref-loaders-content">
           <span class="kss-title__ref">
-              2.1
+              5.1
             <span class="kss-title__permalink-hash">
-                #buttons.call-to-action
+                #loaders.content
             </span>
           </span>
-          Call to action submit or link buttons
+          Content loading
         </a>
       </h2>
 
 
+      <div class="kss-description">
+        <p>This is loading animation purely designed for content lazy loading. There is
+multiple different variations to fit different kinds of content.</p>
+
+      </div>
     </div>
 
       <div class="kss-modifier__wrapper">
@@ -119,77 +129,53 @@
           Default styling
         </div>
         <div class="kss-modifier__example">
-          <a href="#" class="c-button [modifier class]">Link Button</a>
-<button class="c-button [modifier class]">Button Element</button>
-<input type="button" class="c-button [modifier class]" value="input[type='button']"/>
+          <div class="content-loading [modifier class]"></div>
 
         </div>
         <div class="kss-modifier__name kss-style">
-          .c-button--blue
+          .content-loading--one-word
         </div>
         <div class="kss-modifier__description kss-style">
-          This is the most common variation of the button. This should be used on all of the submit buttons.
+          This is used to placeholder a single word.
         </div>
         <div class="kss-modifier__example">
-          <a href="#" class="c-button c-button--blue">Link Button</a>
-<button class="c-button c-button--blue">Button Element</button>
-<input type="button" class="c-button c-button--blue" value="input[type='button']"/>
+          <div class="content-loading content-loading--one-word"></div>
 
         </div>
         <div class="kss-modifier__name kss-style">
-          .c-button--blue:hover
+          .content-loading--half-width
         </div>
         <div class="kss-modifier__description kss-style">
-          The colors invert while the button is being hovered.
+          This is used to fill half of the space.
         </div>
         <div class="kss-modifier__example">
-          <a href="#" class="c-button c-button--blue pseudo-class-hover">Link Button</a>
-<button class="c-button c-button--blue pseudo-class-hover">Button Element</button>
-<input type="button" class="c-button c-button--blue pseudo-class-hover" value="input[type='button']"/>
+          <div class="content-loading content-loading--half-width"></div>
 
         </div>
         <div class="kss-modifier__name kss-style">
-          .c-button--grey
+          .content-loading--two-thirds-width
         </div>
         <div class="kss-modifier__description kss-style">
-          This variation should be used on secondary buttons.
+          This is used to fill two thirds of the space.
         </div>
         <div class="kss-modifier__example">
-          <a href="#" class="c-button c-button--grey">Link Button</a>
-<button class="c-button c-button--grey">Button Element</button>
-<input type="button" class="c-button c-button--grey" value="input[type='button']"/>
+          <div class="content-loading content-loading--two-thirds-width"></div>
 
         </div>
         <div class="kss-modifier__name kss-style">
-          .c-button--grey:hover
+          .content-loading--vertical-space
         </div>
         <div class="kss-modifier__description kss-style">
-          The colors invert while the button is being hovered.
+          This variation can be used if multiple loading effects are placed above each other.
         </div>
         <div class="kss-modifier__example">
-          <a href="#" class="c-button c-button--grey pseudo-class-hover">Link Button</a>
-<button class="c-button c-button--grey pseudo-class-hover">Button Element</button>
-<input type="button" class="c-button c-button--grey pseudo-class-hover" value="input[type='button']"/>
-
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .c-button--with-arrow
-        </div>
-        <div class="kss-modifier__description kss-style">
-          This variation is used on links.
-        </div>
-        <div class="kss-modifier__example">
-          <a href="#" class="c-button c-button--with-arrow">Link Button</a>
-<button class="c-button c-button--with-arrow">Button Element</button>
-<input type="button" class="c-button c-button--with-arrow" value="input[type='button']"/>
+          <div class="content-loading content-loading--vertical-space"></div>
 
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;a href=&quot;#&quot; class=&quot;c-button [modifier class]&quot;&gt;Link Button&lt;/a&gt;
-&lt;button class=&quot;c-button [modifier class]&quot;&gt;Button Element&lt;/button&gt;
-&lt;input type=&quot;button&quot; class=&quot;c-button [modifier class]&quot; value=&quot;input[type=&#x27;button&#x27;]&quot;/&gt;
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;content-loading [modifier class]&quot;&gt;&lt;/div&gt;
 </code></pre>
       </div>
 
