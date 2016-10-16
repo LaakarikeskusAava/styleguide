@@ -51,7 +51,7 @@
             <li class="kss-nav__menu-item">
               <a href="section-lists.html#kssref-lists-simple">
                 <span class="kss-nav__ref ">3.1</span
-                ><span class="kss-nav__name">Simple lists</span>
+                ><span class="kss-nav__name">List of links</span>
               </a>
             </li>
         </ul>
@@ -60,6 +60,12 @@
         <a href="section-forms.html">
           <span class="kss-nav__ref">4</span
           ><span class="kss-nav__name">Forms</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a href="section-loaders.html">
+          <span class="kss-nav__ref">5</span
+          ><span class="kss-nav__name">Loading effects</span>
         </a>
       </li>
     </ul>
@@ -98,15 +104,16 @@
                 #lists.simple
             </span>
           </span>
-          Simple lists
+          List of links
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <p>Simple lists are being used in places where there is only one row of content
-and there is a link where to find more. This style is usually used in areas
-where there is limited amount of space available for the list such as blocks.</p>
+        <p>Simple link list is being used in places where there is only one row of
+content and there is a link where to find more. This style is usually used in
+areas where there is limited amount of space available for the list such as
+blocks.</p>
 
       </div>
     </div>
@@ -116,23 +123,23 @@ where there is limited amount of space available for the list such as blocks.</p
           Example
         </div>
         <div class="kss-modifier__example">
-          <div class="c-simple-list ">
-  <h2 class="c-simple-list__title">List title</h2>
-    <div class="c-simple-list__wrapper">
-      <div class="c-simple-list__content">
-
-        <a href="#" class="c-list-item">
-          <span class="c-list-item__text">Lorem ipsum dolor sit amet</span>
+          <div class="list ">
+  <h2 class="list__title">List title</h2>
+    <div class="list__wrapper">
+      <div class="-list__content">
+        <a href="#" class="list__item">
+          <span class="list__text">Lorem ipsum dolor sit amet</span>
         </a>
-        <a href="#" class="c-list-item">
-          <span class="c-list-item__text">Lorem ipsum dolor sit amet</span>
+        <a href="#" class="list__item">
+          <span class="list__text">Lorem ipsum dolor sit amet</span>
         </a>
-        <a href="#" class="c-list-item">
-          <span class="c-list-item__text">Lorem ipsum dolor sit amet</span>
+        <a href="#" class="list__item">
+          <span class="list__text">Lorem ipsum dolor sit amet</span>
         </a>
       </div>
     </div>
   </div>
+  <a href="#">+ Show all</a>
 </div>
 
 
@@ -140,23 +147,23 @@ where there is limited amount of space available for the list such as blocks.</p
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;c-simple-list &quot;&gt;
-  &lt;h2 class=&quot;c-simple-list__title&quot;&gt;List title&lt;/h2&gt;
-    &lt;div class=&quot;c-simple-list__wrapper&quot;&gt;
-      &lt;div class=&quot;c-simple-list__content&quot;&gt;
-
-        &lt;a href=&quot;#&quot; class=&quot;c-list-item&quot;&gt;
-          &lt;span class=&quot;c-list-item__text&quot;&gt;Lorem ipsum dolor sit amet&lt;/span&gt;
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;list &quot;&gt;
+  &lt;h2 class=&quot;list__title&quot;&gt;List title&lt;/h2&gt;
+    &lt;div class=&quot;list__wrapper&quot;&gt;
+      &lt;div class=&quot;-list__content&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;list__item&quot;&gt;
+          &lt;span class=&quot;list__text&quot;&gt;Lorem ipsum dolor sit amet&lt;/span&gt;
         &lt;/a&gt;
-        &lt;a href=&quot;#&quot; class=&quot;c-list-item&quot;&gt;
-          &lt;span class=&quot;c-list-item__text&quot;&gt;Lorem ipsum dolor sit amet&lt;/span&gt;
+        &lt;a href=&quot;#&quot; class=&quot;list__item&quot;&gt;
+          &lt;span class=&quot;list__text&quot;&gt;Lorem ipsum dolor sit amet&lt;/span&gt;
         &lt;/a&gt;
-        &lt;a href=&quot;#&quot; class=&quot;c-list-item&quot;&gt;
-          &lt;span class=&quot;c-list-item__text&quot;&gt;Lorem ipsum dolor sit amet&lt;/span&gt;
+        &lt;a href=&quot;#&quot; class=&quot;list__item&quot;&gt;
+          &lt;span class=&quot;list__text&quot;&gt;Lorem ipsum dolor sit amet&lt;/span&gt;
         &lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
+  &lt;a href=&quot;#&quot;&gt;+ Show all&lt;/a&gt;
 &lt;/div&gt;
 
 </code></pre>
