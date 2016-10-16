@@ -1,28 +1,25 @@
-// Lists
+// List of links
 //
-// Weight: 3
+// Simple link list is being used in places where there is only one row of
+// content and there is a link where to find more. This style is usually used in
+// areas where there is limited amount of space available for the list such as
+// blocks.
 //
-// Style guide: typography.lists
-
-ul, ol {
-  margin: 0 0 0 25px;
-  padding: 0 0 20px 0;
-  border: 0;
+// Markup: list.hbs
+//
+// Style guide: lists.simple
+.list__title {
+  border-bottom: 1px solid $border-grey;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
 }
+.list__item {
+  border-bottom: 1px solid $border-grey;
+  color: $paragraphs;
+  display: block;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 
-// Unordered lists
-//
-// A list of items in which the order does <em>not</em> explicitly matter.
-//
-// Markup: unordered.hbs
-//
-// Style guide: typography.lists.unordered
-
-
-// Ordered lists
-//
-// A list of items in which the order <em>does</em> explicitly matter.
-//
-// Markup: ordered.hbs
-//
-// Style guide: typography.lists.ordered
+  background: url('images/arrow-blue.svg') right 7px no-repeat;
+  background-size: 18px 14px;
+}
