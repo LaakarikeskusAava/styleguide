@@ -8,18 +8,38 @@
 // Markup: list.hbs
 //
 // Style guide: lists.simple
-.list__title {
-  border-bottom: 1px solid $border-grey;
-  padding-bottom: 15px;
-  margin-bottom: 10px;
-}
-.list__item {
-  border-bottom: 1px solid $border-grey;
-  color: $paragraphs;
-  display: block;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
 
-  background: url('images/arrow-blue.svg') right 7px no-repeat;
-  background-size: 18px 14px;
+// @todo Move to some other file?
+$vertical-rhythm: 25px;
+
+.list__content {
+  border-top: 1px solid $border-grey-v2;
+  margin-bottom: $vertical-rhythm;
+}
+
+.list__item {
+  border-bottom: 1px solid $border-grey-v2;
+  padding-top: $vertical-rhythm / 2;
+  padding-bottom: $vertical-rhythm / 2;
+}
+
+.list__item--link {
+  padding-top: 0;
+  padding-bottom: 0;
+  // @todo Enable image-url().
+  background: url('images/arrow-blue-thin.svg') no-repeat;
+  background-size: auto 1em;
+  background-position: right 10px center;
+  transition: background .2s;
+
+  &:hover {
+    background-position: right 5px center;
+  }
+
+  a {
+    display: block;
+    color: inherit;
+    padding-top: $vertical-rhythm / 2;
+    padding-bottom: $vertical-rhythm / 2;
+  }
 }
