@@ -1,0 +1,9 @@
+<ul class="navbar">
+  {%for item in items%}
+    <li class="navbar__item">
+      <a href="{{ item.url }}" class="navbar__link{% if item.active %} is-active{% endif %}">
+        {{ item.title }}
+      </a>
+    </li>
+  {%endfor%}
+</ul>

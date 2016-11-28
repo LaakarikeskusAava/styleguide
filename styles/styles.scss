@@ -34,6 +34,16 @@
 @import "./components/forms/forms.scss";
 @import "./components/forms/example/example.scss";
 
+// Navigation
+//
+// Navigation components are specialized design components that are used for
+// page navigation.
+//
+// Weight: 4
+//
+// Style guide: navigation
+@import "./navigation/navbar/navbar.scss";
+
 // Loading effects
 //
 // When something on the UI is on a loading state, loading effect should take a
