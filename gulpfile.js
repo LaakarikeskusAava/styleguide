@@ -10,7 +10,7 @@ var options = {};
 options.rootPath = {
   project: __dirname + '/',
   styleGuide: __dirname + '/styleguide/',
-  styles: __dirname + '/styles/',
+  styles: __dirname + '/styles/'
 };
 
 options.styleGuide = {
@@ -22,9 +22,14 @@ options.styleGuide = {
   destination: options.rootPath.styleGuide,
   mask: /\.sass|\.scss/,
   css: [
+    'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css',
     'public/styles.css'
   ],
-  js: [],
+  js: [
+    'https://code.jquery.com/jquery-1.12.4.js',
+    'https://code.jquery.com/ui/1.12.0/jquery-ui.min.js',
+    path.relative(options.rootPath.styleGuide, options.rootPath.styles + 'components/forms/slider/slider.js')
+  ],
   homepage: 'styleguide.md',
   title: 'Aava Styleguide'
 };
