@@ -1,0 +1,45 @@
+// Slider
+//
+// Markup: slider.twig
+//
+// Style guide: forms.slider
+.slider {
+  color: $border-dark-grey;
+  position: relative;
+  border: 1px solid $light-grey;
+  padding: 30px 60px;
+}
+
+.slider__max {
+  position: absolute;
+  top: 25px;
+  right: 21px;
+}
+.slider__min {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+/**
+ * Jquery UI overrides.
+ */
+.ui-slider .slider__handle.ui-slider-handle {
+  width: 2em;
+  height: 2em;
+  border-radius: 100px;
+  top: 50%;
+  margin-top: -1.05em;
+  margin-left: -1.2em;
+  text-align: center;
+  line-height: 2em;
+  padding: 1px 1px 0 0;
+  background: $navigation-background;
+  color: $white;
+  cursor: pointer;
+  border: none;
+}
+
+.ui-slider .slider__handle.ui-slider-handle:active {
+  border: none;
+}
