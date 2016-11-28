@@ -9,8 +9,7 @@
     "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.0",
     "gulp-sass": "^2.2.0",
-    "gulp-shell": "^0.5.2",
-    "kss": "^2.4.0",
+    "kss": "^3.0.0-beta.16",
     "run-sequence": "^1.1.5"
   }
 }
