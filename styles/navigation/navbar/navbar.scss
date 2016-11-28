@@ -1,0 +1,30 @@
+// Navbar
+//
+// A simple component to get navigation links to appear in one line. This is
+// mainly used to create navigation for small subsections on the application.
+//
+// Markup: navbar.twig
+//
+// Style guide: navigation.navbar
+.navbar {
+  font-size: 1.05em;
+  z-index: 5;
+  border-bottom: 1px solid $light-grey;
+  padding: 0;
+}
+
+.navbar__item {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.navbar__link {
+  padding: 15px 0;
+  margin-bottom: -1px;
+  z-index: 10;
+}
+
+.navbar__link.is-active {
+  display: block;
+  border-bottom: 4px solid $blue;
+}

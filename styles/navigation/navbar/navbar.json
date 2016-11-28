@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "url": "#",
+      "title": "First item",
+      "active": true
+    },
+    {
+      "url": "#",
+      "title": "Second item"
+    },
+    {
+      "url": "#",
+      "title": "Third item"
+    }
+  ]
+}

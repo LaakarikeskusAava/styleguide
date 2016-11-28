@@ -40,14 +40,6 @@
         <a class="kss-nav__menu-link" href="section-lists.html">
           <span class="kss-nav__ref">3</span><span class="kss-nav__name">Lists</span>
         </a>
-                  <ul class="kss-nav__menu-child">
-                      <li class="kss-nav__menu-item">
-              <a class="kss-nav__menu-link" href="section-lists.html#kssref-lists-simple">
-                <span class="kss-nav__ref ">3.1</span
-                ><span class="kss-nav__name">List of links</span>
-              </a>
-            </li>
-                    </ul>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-forms.html">
@@ -58,6 +50,14 @@
         <a class="kss-nav__menu-link" href="section-navigation.html">
           <span class="kss-nav__ref">5</span><span class="kss-nav__name">Navigation</span>
         </a>
+                  <ul class="kss-nav__menu-child">
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-navigation.html#kssref-navigation-navbar">
+                <span class="kss-nav__ref ">5.1</span
+                ><span class="kss-nav__name">Navbar</span>
+              </a>
+            </li>
+                    </ul>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-loaders.html">
@@ -70,47 +70,50 @@
 <article role="main" class="kss-main">
 
   
-          <div id="kssref-lists" class="kss-section kss-section--depth-1">
+          <div id="kssref-navigation" class="kss-section kss-section--depth-1">
       <div class="kss-style">
                 <h1 class="kss-title kss-title--level-1">
-          <a class="kss-title__permalink" href="#kssref-lists">
+          <a class="kss-title__permalink" href="#kssref-navigation">
             <span class="kss-title__ref">
-              3
+              5
               <span class="kss-title__permalink-hash">
-                lists
+                navigation
               </span>
             </span>
-            Lists
+            Navigation
           </a>
         </h1>
 
+                  <div class="kss-description">
+            <p>Navigation components are specialized design components that are used for
+page navigation.</p>
+
+          </div>
         
               </div>
 
       
               <div class="kss-source kss-style">
-          Source: <code>styles.scss</code>, line 20
+          Source: <code>styles.scss</code>, line 37
         </div>
           </div>
-          <section id="kssref-lists-simple" class="kss-section kss-section--depth-2">
+          <section id="kssref-navigation-navbar" class="kss-section kss-section--depth-2">
       <div class="kss-style">
                 <h2 class="kss-title kss-title--level-2">
-          <a class="kss-title__permalink" href="#kssref-lists-simple">
+          <a class="kss-title__permalink" href="#kssref-navigation-navbar">
             <span class="kss-title__ref">
-              3.1
+              5.1
               <span class="kss-title__permalink-hash">
-                lists.simple
+                navigation.navbar
               </span>
             </span>
-            List of links
+            Navbar
           </a>
         </h2>
 
                   <div class="kss-description">
-            <p>Simple link list is being used in places where there is only one row of
-content and there is a link where to find more. This style is usually used in
-areas where there is limited amount of space available for the list such as
-blocks.</p>
+            <p>A simple component to get navigation links to appear in one line. This is
+mainly used to create navigation for small subsections on the application.</p>
 
           </div>
         
@@ -122,54 +125,50 @@ blocks.</p>
 
           
           <div class="kss-modifier__example">
-            <div class="list ">
-  <h2 class="list__title">List title</h2>
-    <div class="list__wrapper">
-      <div class="-list__content">
-        <a href="#" class="list__item">
-          <span class="list__text">Lorem ipsum dolor sit amet</span>
-        </a>
-        <a href="#" class="list__item">
-          <span class="list__text">Lorem ipsum dolor sit amet</span>
-        </a>
-        <a href="#" class="list__item">
-          <span class="list__text">Lorem ipsum dolor sit amet</span>
-        </a>
-      </div>
-    </div>
-  </div>
-  <a href="#">+ Show all</a>
-</div>
-
+            <ul class="navbar">
+      <li class="navbar__item">
+      <a href="#" class="navbar__link is-active">
+        First item
+      </a>
+    </li>
+      <li class="navbar__item">
+      <a href="#" class="navbar__link">
+        Second item
+      </a>
+    </li>
+      <li class="navbar__item">
+      <a href="#" class="navbar__link">
+        Third item
+      </a>
+    </li>
+  </ul>
 
           </div>
 
                   </div>
                   <div class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;list &quot;&gt;
-  &lt;h2 class=&quot;list__title&quot;&gt;List title&lt;/h2&gt;
-    &lt;div class=&quot;list__wrapper&quot;&gt;
-      &lt;div class=&quot;-list__content&quot;&gt;
-        &lt;a href=&quot;#&quot; class=&quot;list__item&quot;&gt;
-          &lt;span class=&quot;list__text&quot;&gt;Lorem ipsum dolor sit amet&lt;/span&gt;
-        &lt;/a&gt;
-        &lt;a href=&quot;#&quot; class=&quot;list__item&quot;&gt;
-          &lt;span class=&quot;list__text&quot;&gt;Lorem ipsum dolor sit amet&lt;/span&gt;
-        &lt;/a&gt;
-        &lt;a href=&quot;#&quot; class=&quot;list__item&quot;&gt;
-          &lt;span class=&quot;list__text&quot;&gt;Lorem ipsum dolor sit amet&lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;a href=&quot;#&quot;&gt;+ Show all&lt;/a&gt;
-&lt;/div&gt;
-
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul class=&quot;navbar&quot;&gt;
+      &lt;li class=&quot;navbar__item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;navbar__link is-active&quot;&gt;
+        First item
+      &lt;/a&gt;
+    &lt;/li&gt;
+      &lt;li class=&quot;navbar__item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;navbar__link&quot;&gt;
+        Second item
+      &lt;/a&gt;
+    &lt;/li&gt;
+      &lt;li class=&quot;navbar__item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;navbar__link&quot;&gt;
+        Third item
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
 </code></pre>
           </div>
               
               <div class="kss-source kss-style">
-          Source: <code>components/list/list.scss</code>, line 1
+          Source: <code>navigation/navbar/navbar.scss</code>, line 1
         </div>
           </section>
   </article>

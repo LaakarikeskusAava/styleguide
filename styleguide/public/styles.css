@@ -219,6 +219,29 @@ label {
   display: block;
 }
 
+.navbar {
+  font-size: 1.05em;
+  z-index: 5;
+  border-bottom: 1px solid #A9A9A9;
+  padding: 0;
+}
+
+.navbar__item {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.navbar__link {
+  padding: 15px 0;
+  margin-bottom: -1px;
+  z-index: 10;
+}
+
+.navbar__link.is-active {
+  display: block;
+  border-bottom: 4px solid #1f9ad7;
+}
+
 @keyframes placeHolderShimmer {
   0% {
     background-position: -468px 0;
