@@ -259,3 +259,39 @@ label {
 .content-loading--vertical-space {
   margin-bottom: 13px;
 }
+
+table {
+  display: table;
+  text-align: left;
+  width: 100%;
+}
+
+td, th {
+  padding: 15px 10px;
+}
+
+th {
+  font-weight: bold;
+}
+
+.odd {
+  background: #fafafa;
+}
+
+th {
+  border-top: solid 1px #e6e6e6;
+}
+
+tr {
+  background: #fff;
+  width: 100%;
+  border-bottom: solid 1px #e6e6e6;
+}
+
+.table__left {
+  padding-right: 10px;
+}
+
+.table__right {
+  padding-left: 10px;
+}

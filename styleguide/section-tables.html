@@ -59,130 +59,131 @@
           <span class="kss-nav__ref">5</span
           ><span class="kss-nav__name">Loading effects</span>
         </a>
-        <ul class="kss-nav__menu-child">
-            <li class="kss-nav__menu-item">
-              <a href="section-loaders.html#kssref-loaders-content">
-                <span class="kss-nav__ref ">5.1</span
-                ><span class="kss-nav__name">Content loading</span>
-              </a>
-            </li>
-        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-tables.html">
           <span class="kss-nav__ref">6</span
           ><span class="kss-nav__name">Tables</span>
         </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-tables.html#kssref-tables-example">
+                <span class="kss-nav__ref ">6.1</span
+                ><span class="kss-nav__name">Example table</span>
+              </a>
+            </li>
+        </ul>
       </li>
     </ul>
   </nav>
 </div>
 <article role="main" class="kss-main">
 
-      <div     id="kssref-loaders" class="kss-section kss-section--depth-1">
+      <div     id="kssref-tables" class="kss-section kss-section--depth-1">
 
     <div class="kss-style">
       <h1 class="kss-title kss-title--level-1">
-        <a class="kss-title__permalink" href="#kssref-loaders">
+        <a class="kss-title__permalink" href="#kssref-tables">
           <span class="kss-title__ref">
-              5
+              6
             <span class="kss-title__permalink-hash">
-                #loaders
+                #tables
             </span>
           </span>
-          Loading effects
+          Tables
         </a>
       </h1>
 
 
-      <div class="kss-description">
-        <p>When something on the UI is on a loading state, loading effect should take a
-place.</p>
-
-      </div>
     </div>
 
 
       </div>
-      <section id="kssref-loaders-content" class="kss-section kss-section--depth-2">
+      <section id="kssref-tables-example" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-loaders-content">
+        <a class="kss-title__permalink" href="#kssref-tables-example">
           <span class="kss-title__ref">
-              5.1
+              6.1
             <span class="kss-title__permalink-hash">
-                #loaders.content
+                #tables.example
             </span>
           </span>
-          Content loading
+          Example table
         </a>
       </h2>
 
 
-      <div class="kss-description">
-        <p>This is loading animation purely designed for content lazy loading. There is
-multiple different variations to fit different kinds of content.</p>
-
-      </div>
     </div>
 
       <div class="kss-modifier__wrapper">
         <div class="kss-modifier__heading kss-style">
-          Examples
-        </div>
-        <div class="kss-modifier__default-name kss-style">
-          Default styling
+          Example
         </div>
         <div class="kss-modifier__example">
-          <div class="content-loading [modifier class]"></div>
-
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .content-loading--one-word
-        </div>
-        <div class="kss-modifier__description kss-style">
-          This is used to placeholder a single word.
-        </div>
-        <div class="kss-modifier__example">
-          <div class="content-loading content-loading--one-word"></div>
-
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .content-loading--half-width
-        </div>
-        <div class="kss-modifier__description kss-style">
-          This is used to fill half of the space.
-        </div>
-        <div class="kss-modifier__example">
-          <div class="content-loading content-loading--half-width"></div>
-
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .content-loading--two-thirds-width
-        </div>
-        <div class="kss-modifier__description kss-style">
-          This is used to fill two thirds of the space.
-        </div>
-        <div class="kss-modifier__example">
-          <div class="content-loading content-loading--two-thirds-width"></div>
-
-        </div>
-        <div class="kss-modifier__name kss-style">
-          .content-loading--vertical-space
-        </div>
-        <div class="kss-modifier__description kss-style">
-          This variation can be used if multiple loading effects are placed above each other.
-        </div>
-        <div class="kss-modifier__example">
-          <div class="content-loading content-loading--vertical-space"></div>
-
+          <table class="table table--content">
+<tr>
+  <th>Date</th>
+  <th>Dolor</th>
+  <th>Lorem</th>
+  <th>Ipsum</th>
+  <th>Header</th>
+  <th>Of</th>
+  <th>Example</th>
+</tr>
+  <tr class="odd">  
+    <td>11.12.2016</td>
+    <td>Lorem</td>  
+    <td>Lorem ipsum dolor sit amet</td>
+    <td>2</td>  
+    <td>1</td>
+    <td>1</td>
+    <td>tl/dr</td>
+  </tr>
+  <tr class="even">
+    <td>11.12.2016</td>
+    <td>Name</td>
+    <td>Lorem</td>
+    <td>44</td>
+    <td>40</td>
+    <td>40</td>
+    <td>ipsum/dolor</td>
+  </tr>
+</table>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;content-loading [modifier class]&quot;&gt;&lt;/div&gt;
-</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;table table--content&quot;&gt;
+&lt;tr&gt;
+  &lt;th&gt;Date&lt;/th&gt;
+  &lt;th&gt;Dolor&lt;/th&gt;
+  &lt;th&gt;Lorem&lt;/th&gt;
+  &lt;th&gt;Ipsum&lt;/th&gt;
+  &lt;th&gt;Header&lt;/th&gt;
+  &lt;th&gt;Of&lt;/th&gt;
+  &lt;th&gt;Example&lt;/th&gt;
+&lt;/tr&gt;
+  &lt;tr class=&quot;odd&quot;&gt;  
+    &lt;td&gt;11.12.2016&lt;/td&gt;
+    &lt;td&gt;Lorem&lt;/td&gt;  
+    &lt;td&gt;Lorem ipsum dolor sit amet&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;  
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;tl/dr&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class=&quot;even&quot;&gt;
+    &lt;td&gt;11.12.2016&lt;/td&gt;
+    &lt;td&gt;Name&lt;/td&gt;
+    &lt;td&gt;Lorem&lt;/td&gt;
+    &lt;td&gt;44&lt;/td&gt;
+    &lt;td&gt;40&lt;/td&gt;
+    &lt;td&gt;40&lt;/td&gt;
+    &lt;td&gt;ipsum/dolor&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
       </div>
 
       </section>
