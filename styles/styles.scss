@@ -45,12 +45,19 @@
 // Style guide: navigation
 @import "./navigation/navbar/navbar.scss";
 
+// Details
+//
+// Weight: 5
+//
+// Style guide: details
+@import "./components/details/details.scss";
+
 // Loading effects
 //
 // When something on the UI is on a loading state, loading effect should take a
 // place.
 //
-// Weight: 5
+// Weight: 6
 //
 // Style guide: loaders
 @import "./components/content-loading/content-loading.scss";

@@ -288,6 +288,21 @@ label {
   border-bottom: 4px solid #1f9ad7;
 }
 
+.details__summary {
+  background: url("images/arrow-blue-thin.svg") center right no-repeat;
+  background-size: 15px;
+  cursor: pointer;
+}
+.details__summary::-webkit-details-marker {
+  display: none;
+}
+
+.details[open] .details__summary {
+  background-image: url("images/arrow-down-blue.svg");
+  background-size: 18px;
+  margin-bottom: 12.5px;
+}
+
 @keyframes placeHolderShimmer {
   0% {
     background-position: -468px 0;
