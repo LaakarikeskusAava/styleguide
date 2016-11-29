@@ -1,0 +1,26 @@
+// Details
+//
+// Component can be used to create an interactive widget that the user can open
+// and close. This allows to show additional details that the user can view or
+// hide on demand.
+//
+// Markup: details.twig
+//
+// Style guide: details.default
+.details__summary {
+  background: url('images/arrow-blue-thin.svg') center right no-repeat;
+  background-size: 15px;
+  cursor: pointer;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+.details[open] {
+  .details__summary {
+    background-image: url('images/arrow-down-blue.svg');
+    background-size: 18px;
+    margin-bottom: $vertical-rhythm / 2;
+  }
+}
