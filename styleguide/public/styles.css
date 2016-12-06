@@ -344,32 +344,31 @@ label {
   margin-bottom: 13px;
 }
 
-table {
+.table {
   display: table;
   text-align: left;
   width: 100%;
 }
 
-td, th {
+.table__header {
+  font-weight: bold;
+  border-top: solid 1px #e6e6e6;
+  border-bottom: solid 1px #e6e6e6;
   padding: 15px 10px;
 }
 
-th {
-  font-weight: bold;
-}
-
-.odd {
-  background: #fafafa;
-}
-
-th {
-  border-top: solid 1px #e6e6e6;
-}
-
-tr {
+.table__row {
   background: #fff;
   width: 100%;
   border-bottom: solid 1px #e6e6e6;
+}
+
+.table__row--odd {
+  background: #fafafa;
+}
+
+.table__cell {
+  padding: 15px 10px;
 }
 
 .table__left {
@@ -378,4 +377,47 @@ tr {
 
 .table__right {
   padding-left: 10px;
+}
+
+.table--mobile {
+  width: 100%;
+}
+.table--mobile tr:first-child {
+  border-top: solid 1px #e6e6e6;
+}
+
+.table__row {
+  padding: 12px 0;
+}
+
+.table__content:first-child {
+  font-weight: bold;
+}
+
+.table__content:before {
+  font-weight: bold;
+  content: attr(data-mobile-label);
+  display: inline-block;
+  width: 25%;
+  position: absolute;
+  left: 0;
+}
+.table__content:first-child {
+  padding-bottom: 10px;
+  padding-left: 0;
+}
+.table__content:first-child:before {
+  content: "";
+}
+
+.table--mobile-headers {
+  padding-left: 25%;
+  position: relative;
+}
+
+.table--details details {
+  font-weight: normal;
+}
+.table--details td:first-child {
+  width: 10%;
 }

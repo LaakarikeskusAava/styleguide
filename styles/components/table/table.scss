@@ -1,29 +1,38 @@
-table {
+// Table large screens
+//
+// This component is useful for visualizing large amount of data on large screens.
+//
+// Weight: 1
+//
+// Markup: table.twig
+//
+// Style guide: tables.desktop
+
+.table {
   display: table;
   text-align: left;
   width: 100%;
 }
 
-td, th {
+.table__header {
+  font-weight: bold;
+  border-top: solid 1px #e6e6e6;
+  border-bottom: solid 1px #e6e6e6;
   padding: 15px 10px;
 }
 
-th {
-  font-weight: bold;
-}
-
-.odd {
-  background: #fafafa;
-}
-
-th {
-  border-top: solid 1px #e6e6e6;
-}
-
-tr {
+.table__row {
   background: #fff;
   width: 100%;
   border-bottom: solid 1px #e6e6e6;
+}
+
+.table__row--odd {
+  background: #fafafa;
+}
+
+.table__cell {
+  padding: 15px 10px;
 }
 
 .table__left {
@@ -32,4 +41,64 @@ tr {
 
 .table__right {
   padding-left: 10px;
+}
+
+
+// Table small screens
+//
+// This component is useful for visualizing large amount of data on small screens.
+//
+// Weight: 2
+//
+// Markup: table-mobile.twig
+//
+// Style guide: tables.mobile
+.table--mobile {
+  width: 100%;
+
+  tr:first-child {
+    border-top: solid 1px $border-grey-v2;
+  }
+}
+
+.table__row {
+  padding: 12px 0;
+}
+
+.table__content:first-child {
+  font-weight: bold;
+}
+
+.table__content {
+  &:before {
+    font-weight: bold;
+    content: attr(data-mobile-label);
+    display: inline-block;
+    width: 25%;
+    position: absolute;
+    left: 0;
+  }
+
+  &:first-child {
+    padding-bottom: 10px;
+    padding-left: 0;
+
+    &:before {
+      content: "";
+    }
+  }
+}
+
+.table--mobile-headers {
+  padding-left: 25%;
+  position: relative;
+}
+
+.table--details {
+  details {
+    font-weight: normal;
+  }
+  td:first-child {
+    width: 10%;
+  }
 }
