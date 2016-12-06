@@ -56,6 +56,14 @@
         <a class="kss-nav__menu-link" href="section-details.html">
           <span class="kss-nav__ref">6</span><span class="kss-nav__name">Details</span>
         </a>
+                  <ul class="kss-nav__menu-child">
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-details.html#kssref-details-default">
+                <span class="kss-nav__ref ">6.1</span
+                ><span class="kss-nav__name">Details</span>
+              </a>
+            </li>
+                    </ul>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-loaders.html">
@@ -66,14 +74,6 @@
         <a class="kss-nav__menu-link" href="section-tables.html">
           <span class="kss-nav__ref">8</span><span class="kss-nav__name">Tables</span>
         </a>
-                  <ul class="kss-nav__menu-child">
-                      <li class="kss-nav__menu-item">
-              <a class="kss-nav__menu-link" href="section-tables.html#kssref-tables-example">
-                <span class="kss-nav__ref ">8.1</span
-                ><span class="kss-nav__name">Example table</span>
-              </a>
-            </li>
-                    </ul>
               </li>
         </ul>
   </nav>
@@ -81,17 +81,17 @@
 <article role="main" class="kss-main">
 
   
-          <div id="kssref-tables" class="kss-section kss-section--depth-1">
+          <div id="kssref-details" class="kss-section kss-section--depth-1">
       <div class="kss-style">
                 <h1 class="kss-title kss-title--level-1">
-          <a class="kss-title__permalink" href="#kssref-tables">
+          <a class="kss-title__permalink" href="#kssref-details">
             <span class="kss-title__ref">
-              8
+              6
               <span class="kss-title__permalink-hash">
-                tables
+                details
               </span>
             </span>
-            Tables
+            Details
           </a>
         </h1>
 
@@ -100,23 +100,29 @@
 
       
               <div class="kss-source kss-style">
-          Source: <code>styles.scss</code>, line 65
+          Source: <code>styles.scss</code>, line 48
         </div>
           </div>
-          <section id="kssref-tables-example" class="kss-section kss-section--depth-2">
+          <section id="kssref-details-default" class="kss-section kss-section--depth-2">
       <div class="kss-style">
                 <h2 class="kss-title kss-title--level-2">
-          <a class="kss-title__permalink" href="#kssref-tables-example">
+          <a class="kss-title__permalink" href="#kssref-details-default">
             <span class="kss-title__ref">
-              8.1
+              6.1
               <span class="kss-title__permalink-hash">
-                tables.example
+                details.default
               </span>
             </span>
-            Example table
+            Details
           </a>
         </h2>
 
+                  <div class="kss-description">
+            <p>Component can be used to create an interactive widget that the user can open
+and close. This allows to show additional details that the user can view or
+hide on demand.</p>
+
+          </div>
         
               </div>
 
@@ -126,16 +132,24 @@
 
           
           <div class="kss-modifier__example">
-            example-table.hbs
+            <details class="details ">
+  <summary class="details__summary">Lorem ipsum dolor sit amet</summary>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a quam ut elit sodales scelerisque. Nunc dolor lorem, mattis quis risus pretium, pulvinar porta lorem. Nullam vestibulum lorem semper augue sagittis viverra. Aenean ac leo nec turpis tincidunt consequat. Quisque pellentesque metus sed mattis eleifend. Morbi blandit velit eget porta tempor. Etiam feugiat risus nec diam vestibulum porttitor. Duis consectetur, lorem vel ornare facilisis, urna tellus ultrices nibh, id convallis neque tortor ac augue. Praesent commodo lacus eu cursus feugiat. Duis id convallis arcu. Phasellus ante lacus, pharetra vitae consequat ac, finibus eget nisl.
+</details>
+
           </div>
 
                   </div>
                   <div class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">example-table.hbs</code></pre>
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;details class=&quot;details &quot;&gt;
+  &lt;summary class=&quot;details__summary&quot;&gt;Lorem ipsum dolor sit amet&lt;/summary&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a quam ut elit sodales scelerisque. Nunc dolor lorem, mattis quis risus pretium, pulvinar porta lorem. Nullam vestibulum lorem semper augue sagittis viverra. Aenean ac leo nec turpis tincidunt consequat. Quisque pellentesque metus sed mattis eleifend. Morbi blandit velit eget porta tempor. Etiam feugiat risus nec diam vestibulum porttitor. Duis consectetur, lorem vel ornare facilisis, urna tellus ultrices nibh, id convallis neque tortor ac augue. Praesent commodo lacus eu cursus feugiat. Duis id convallis arcu. Phasellus ante lacus, pharetra vitae consequat ac, finibus eget nisl.
+&lt;/details&gt;
+</code></pre>
           </div>
               
               <div class="kss-source kss-style">
-          Source: <code>components/table/example-table/example-table.scss</code>, line 1
+          Source: <code>components/details/details.scss</code>, line 1
         </div>
           </section>
   </article>

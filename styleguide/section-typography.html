@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--[if lte IE 6]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IEMobile 7]>          <html class="no-js iem7" lang="en"> <![endif]-->
-<!--[if (IE 7)&(!IEMobile)]>  <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>                <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
   <title>Aava Styleguide</title>
@@ -12,8 +8,9 @@
   <meta name="generator" content="kss-node">
   <meta name="viewport" content="width=device-width">
 
-  <link rel="stylesheet" href="public/kss.css">
-  <link rel="stylesheet" href="public/styles.css">
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="public/styles.css">
 
 </head>
 <body id="kss-node">
@@ -25,238 +22,253 @@
   <nav class="kss-nav">
     <ul class="kss-nav__menu">
       <li class="kss-nav__menu-item">
-        <a href="./">
+        <a class="kss-nav__menu-link" href="./">
           <span class="kss-nav__ref">0</span
           ><span class="kss-nav__name">Overview</span>
         </a>
       </li>
-      <li class="kss-nav__menu-item">
-        <a href="section-typography.html">
-          <span class="kss-nav__ref">1</span
-          ><span class="kss-nav__name">Typography</span>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-typography.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Typography</span>
         </a>
-        <ul class="kss-nav__menu-child">
-            <li class="kss-nav__menu-item">
-              <a href="section-typography.html#kssref-typography-headings">
+                  <ul class="kss-nav__menu-child">
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-typography.html#kssref-typography-headings">
                 <span class="kss-nav__ref ">1.1</span
                 ><span class="kss-nav__name">Headings</span>
               </a>
             </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-typography.html#kssref-typography-body">
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-typography.html#kssref-typography-body">
                 <span class="kss-nav__ref ">1.2</span
                 ><span class="kss-nav__name">Body text</span>
               </a>
             </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-typography.html#kssref-typography-lists">
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-typography.html#kssref-typography-lists">
                 <span class="kss-nav__ref ">1.3</span
                 ><span class="kss-nav__name">Lists</span>
               </a>
             </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-typography.html#kssref-typography-lists-ordered">
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-typography.html#kssref-typography-lists-ordered">
                 <span class="kss-nav__ref kss-nav__ref-child">1.3.1</span
                 ><span class="kss-nav__name">Ordered lists</span>
               </a>
             </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-typography.html#kssref-typography-lists-unordered">
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-typography.html#kssref-typography-lists-unordered">
                 <span class="kss-nav__ref kss-nav__ref-child">1.3.2</span
                 ><span class="kss-nav__name">Unordered lists</span>
               </a>
             </li>
+                    </ul>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-buttons.html">
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Buttons</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-lists.html">
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Lists</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-forms.html">
+          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Forms</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-navigation.html">
+          <span class="kss-nav__ref">5</span><span class="kss-nav__name">Navigation</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-details.html">
+          <span class="kss-nav__ref">6</span><span class="kss-nav__name">Details</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-loaders.html">
+          <span class="kss-nav__ref">7</span><span class="kss-nav__name">Loading effects</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-tables.html">
+          <span class="kss-nav__ref">8</span><span class="kss-nav__name">Tables</span>
+        </a>
+              </li>
         </ul>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a href="section-buttons.html">
-          <span class="kss-nav__ref">2</span
-          ><span class="kss-nav__name">Buttons</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a href="section-lists.html">
-          <span class="kss-nav__ref">3</span
-          ><span class="kss-nav__name">Lists</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a href="section-forms.html">
-          <span class="kss-nav__ref">4</span
-          ><span class="kss-nav__name">Forms</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a href="section-loaders.html">
-          <span class="kss-nav__ref">5</span
-          ><span class="kss-nav__name">Loading effects</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a href="section-tables.html">
-          <span class="kss-nav__ref">6</span
-          ><span class="kss-nav__name">Tables</span>
-        </a>
-      </li>
-    </ul>
   </nav>
 </div>
 <article role="main" class="kss-main">
 
-      <div     id="kssref-typography" class="kss-section kss-section--depth-1">
-
-    <div class="kss-style">
-      <h1 class="kss-title kss-title--level-1">
-        <a class="kss-title__permalink" href="#kssref-typography">
-          <span class="kss-title__ref">
+  
+          <div id="kssref-typography" class="kss-section kss-section--depth-1">
+      <div class="kss-style">
+                <h1 class="kss-title kss-title--level-1">
+          <a class="kss-title__permalink" href="#kssref-typography">
+            <span class="kss-title__ref">
               1
-            <span class="kss-title__permalink-hash">
-                #typography
+              <span class="kss-title__permalink-hash">
+                typography
+              </span>
             </span>
-          </span>
-          Typography
-        </a>
-      </h1>
+            Typography
+          </a>
+        </h1>
 
+        
+              </div>
 
-    </div>
-
-
-      </div>
-      <section id="kssref-typography-headings" class="kss-section kss-section--depth-2">
-
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-typography-headings">
-          <span class="kss-title__ref">
-              1.1
-            <span class="kss-title__permalink-hash">
-                #typography.headings
-            </span>
-          </span>
-          Headings
-        </a>
-      </h2>
-
-
-      <div class="kss-description">
-        <p>Only h1-h3 elements should be used.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
+      
+              <div class="kss-source kss-style">
+          Source: <code>styles.scss</code>, line 4
         </div>
-        <div class="kss-modifier__example">
-          <h1>Lorem ipsum dolor sit amet</h1>
+          </div>
+          <section id="kssref-typography-headings" class="kss-section kss-section--depth-2">
+      <div class="kss-style">
+                <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-typography-headings">
+            <span class="kss-title__ref">
+              1.1
+              <span class="kss-title__permalink-hash">
+                typography.headings
+              </span>
+            </span>
+            Headings
+          </a>
+        </h2>
+
+                  <div class="kss-description">
+            <p>Only h1-h3 elements should be used.</p>
+
+          </div>
+        
+              </div>
+
+              <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example          </div>
+
+          
+          <div class="kss-modifier__example">
+            <h1>Lorem ipsum dolor sit amet</h1>
 <h2>Lorem ipsum dolor sit amet</h2>
 <h3>Lorem ipsum dolor sit amet</h3>
 
-        </div>
-      </div>
+          </div>
 
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;h1&gt;Lorem ipsum dolor sit amet&lt;/h1&gt;
+                  </div>
+                  <div class="kss-markup kss-style">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;h1&gt;Lorem ipsum dolor sit amet&lt;/h1&gt;
 &lt;h2&gt;Lorem ipsum dolor sit amet&lt;/h2&gt;
 &lt;h3&gt;Lorem ipsum dolor sit amet&lt;/h3&gt;
 </code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-typography-body" class="kss-section kss-section--depth-2">
-
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-typography-body">
-          <span class="kss-title__ref">
-              1.2
-            <span class="kss-title__permalink-hash">
-                #typography.body
-            </span>
-          </span>
-          Body text
-        </a>
-      </h2>
-
-
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
+          </div>
+              
+              <div class="kss-source kss-style">
+          Source: <code>base/headings/headings.scss</code>, line 1
         </div>
-        <div class="kss-modifier__example">
-          <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+          </section>
+          <section id="kssref-typography-body" class="kss-section kss-section--depth-2">
+      <div class="kss-style">
+                <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-typography-body">
+            <span class="kss-title__ref">
+              1.2
+              <span class="kss-title__permalink-hash">
+                typography.body
+              </span>
+            </span>
+            Body text
+          </a>
+        </h2>
+
+        
+              </div>
+
+              <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example          </div>
+
+          
+          <div class="kss-modifier__example">
+            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
 <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 <p><em>Suspendisse pretium nulla nec enim consectetur, eu lacinia eros dignissim. Aliquam venenatis quis libero ut mattis. Sed pretium, nisi non lacinia laoreet, magna lectus finibus diam, at laoreet turpis est et neque.</em></p>
 <p><strong> Class aptent taciti sociosqu ad litora torquent per conubia nostra</strong></p>
 <p><strong><em>Donec a quam et libero ullamcorper vehicula in quis massa.</em></strong></p>
 
-        </div>
-      </div>
+          </div>
 
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;p&gt;Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.&lt;/p&gt;
+                  </div>
+                  <div class="kss-markup kss-style">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;p&gt;Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.&lt;/p&gt;
 &lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.&lt;/p&gt;
 &lt;p&gt;Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Suspendisse pretium nulla nec enim consectetur, eu lacinia eros dignissim. Aliquam venenatis quis libero ut mattis. Sed pretium, nisi non lacinia laoreet, magna lectus finibus diam, at laoreet turpis est et neque.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt; Class aptent taciti sociosqu ad litora torquent per conubia nostra&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Donec a quam et libero ullamcorper vehicula in quis massa.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 </code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-typography-lists" class="kss-section kss-section--depth-2">
-
-    <div class="kss-style">
-      <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-typography-lists">
-          <span class="kss-title__ref">
-              1.3
-            <span class="kss-title__permalink-hash">
-                #typography.lists
-            </span>
-          </span>
-          Lists
-        </a>
-      </h2>
-
-
-    </div>
-
-
-      </section>
-      <section id="kssref-typography-lists-ordered" class="kss-section kss-section--depth-3">
-
-    <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink" href="#kssref-typography-lists-ordered">
-          <span class="kss-title__ref">
-              1.3.1
-            <span class="kss-title__permalink-hash">
-                #typography.lists.ordered
-            </span>
-          </span>
-          Ordered lists
-        </a>
-      </h3>
-
-
-      <div class="kss-description">
-        <p>A list of items in which the order <em>does</em> explicitly matter.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
+          </div>
+              
+              <div class="kss-source kss-style">
+          Source: <code>base/body/body.scss</code>, line 1
         </div>
-        <div class="kss-modifier__example">
-          <ol>
+          </section>
+          <section id="kssref-typography-lists" class="kss-section kss-section--depth-2">
+      <div class="kss-style">
+                <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-typography-lists">
+            <span class="kss-title__ref">
+              1.3
+              <span class="kss-title__permalink-hash">
+                typography.lists
+              </span>
+            </span>
+            Lists
+          </a>
+        </h2>
+
+        
+              </div>
+
+      
+              <div class="kss-source kss-style">
+          Source: <code>base/list/list.scss</code>, line 1
+        </div>
+          </section>
+          <section id="kssref-typography-lists-ordered" class="kss-section kss-section--depth-3">
+      <div class="kss-style">
+                <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-typography-lists-ordered">
+            <span class="kss-title__ref">
+              1.3.1
+              <span class="kss-title__permalink-hash">
+                typography.lists.ordered
+              </span>
+            </span>
+            Ordered lists
+          </a>
+        </h3>
+
+                  <div class="kss-description">
+            <p>A list of items in which the order <em>does</em> explicitly matter.</p>
+
+          </div>
+        
+              </div>
+
+              <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example          </div>
+
+          
+          <div class="kss-modifier__example">
+            <ol>
   <li>Lorem ipsum dolor sit amet</li>
   <li>Nulla volutpat aliquam velit
     <ol>
@@ -271,11 +283,11 @@
   <li>Eget porttitor lorem</li>
 </ol>
 
-        </div>
-      </div>
+          </div>
 
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ol&gt;
+                  </div>
+                  <div class="kss-markup kss-style">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ol&gt;
   &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
   &lt;li&gt;Nulla volutpat aliquam velit
     &lt;ol&gt;
@@ -290,37 +302,40 @@
   &lt;li&gt;Eget porttitor lorem&lt;/li&gt;
 &lt;/ol&gt;
 </code></pre>
-      </div>
-
-      </section>
-      <section id="kssref-typography-lists-unordered" class="kss-section kss-section--depth-3">
-
-    <div class="kss-style">
-      <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink" href="#kssref-typography-lists-unordered">
-          <span class="kss-title__ref">
-              1.3.2
-            <span class="kss-title__permalink-hash">
-                #typography.lists.unordered
-            </span>
-          </span>
-          Unordered lists
-        </a>
-      </h3>
-
-
-      <div class="kss-description">
-        <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
-
-      </div>
-    </div>
-
-      <div class="kss-modifier__wrapper">
-        <div class="kss-modifier__heading kss-style">
-          Example
+          </div>
+              
+              <div class="kss-source kss-style">
+          Source: <code>base/list/list.scss</code>, line 22
         </div>
-        <div class="kss-modifier__example">
-          <ul>
+          </section>
+          <section id="kssref-typography-lists-unordered" class="kss-section kss-section--depth-3">
+      <div class="kss-style">
+                <h3 class="kss-title kss-title--level-3">
+          <a class="kss-title__permalink" href="#kssref-typography-lists-unordered">
+            <span class="kss-title__ref">
+              1.3.2
+              <span class="kss-title__permalink-hash">
+                typography.lists.unordered
+              </span>
+            </span>
+            Unordered lists
+          </a>
+        </h3>
+
+                  <div class="kss-description">
+            <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
+
+          </div>
+        
+              </div>
+
+              <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example          </div>
+
+          
+          <div class="kss-modifier__example">
+            <ul>
   <li>Lorem ipsum dolor sit amet</li>
   <li>Nulla volutpat aliquam velit
     <ul>
@@ -335,11 +350,11 @@
   <li>Eget porttitor lorem</li>
 </ul>
 
-        </div>
-      </div>
+          </div>
 
-      <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul&gt;
+                  </div>
+                  <div class="kss-markup kss-style">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul&gt;
   &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
   &lt;li&gt;Nulla volutpat aliquam velit
     &lt;ul&gt;
@@ -354,20 +369,32 @@
   &lt;li&gt;Eget porttitor lorem&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
-      </div>
-
-      </section>
-</article>
+          </div>
+              
+              <div class="kss-source kss-style">
+          Source: <code>base/list/list.scss</code>, line 13
+        </div>
+          </section>
+  </article>
 
 <!-- SCRIPTS -->
-<script src="public/kss.js"></script>
-<script src="public/prettify.js"></script>
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/scrollspy.js"></script>
+<script src="kss-assets/prettify.js"></script>
 <script>
   prettyPrint();
+  var spy = new ScrollSpy('#kss-node', {
+    nav: '.kss-nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
 </script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<script src="../styles/components/forms/slider/slider.js"></script>
 
 
 
-<!-- Automatically generated using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
 </body>
 </html>

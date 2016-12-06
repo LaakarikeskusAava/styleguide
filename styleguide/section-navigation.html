@@ -51,6 +51,14 @@
         <a class="kss-nav__menu-link" href="section-navigation.html">
           <span class="kss-nav__ref">5</span><span class="kss-nav__name">Navigation</span>
         </a>
+                  <ul class="kss-nav__menu-child">
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-navigation.html#kssref-navigation-navbar">
+                <span class="kss-nav__ref ">5.1</span
+                ><span class="kss-nav__name">Navbar</span>
+              </a>
+            </li>
+                    </ul>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-details.html">
@@ -66,14 +74,6 @@
         <a class="kss-nav__menu-link" href="section-tables.html">
           <span class="kss-nav__ref">8</span><span class="kss-nav__name">Tables</span>
         </a>
-                  <ul class="kss-nav__menu-child">
-                      <li class="kss-nav__menu-item">
-              <a class="kss-nav__menu-link" href="section-tables.html#kssref-tables-example">
-                <span class="kss-nav__ref ">8.1</span
-                ><span class="kss-nav__name">Example table</span>
-              </a>
-            </li>
-                    </ul>
               </li>
         </ul>
   </nav>
@@ -81,42 +81,52 @@
 <article role="main" class="kss-main">
 
   
-          <div id="kssref-tables" class="kss-section kss-section--depth-1">
+          <div id="kssref-navigation" class="kss-section kss-section--depth-1">
       <div class="kss-style">
                 <h1 class="kss-title kss-title--level-1">
-          <a class="kss-title__permalink" href="#kssref-tables">
+          <a class="kss-title__permalink" href="#kssref-navigation">
             <span class="kss-title__ref">
-              8
+              5
               <span class="kss-title__permalink-hash">
-                tables
+                navigation
               </span>
             </span>
-            Tables
+            Navigation
           </a>
         </h1>
 
+                  <div class="kss-description">
+            <p>Navigation components are specialized design components that are used for
+page navigation.</p>
+
+          </div>
         
               </div>
 
       
               <div class="kss-source kss-style">
-          Source: <code>styles.scss</code>, line 65
+          Source: <code>styles.scss</code>, line 38
         </div>
           </div>
-          <section id="kssref-tables-example" class="kss-section kss-section--depth-2">
+          <section id="kssref-navigation-navbar" class="kss-section kss-section--depth-2">
       <div class="kss-style">
                 <h2 class="kss-title kss-title--level-2">
-          <a class="kss-title__permalink" href="#kssref-tables-example">
+          <a class="kss-title__permalink" href="#kssref-navigation-navbar">
             <span class="kss-title__ref">
-              8.1
+              5.1
               <span class="kss-title__permalink-hash">
-                tables.example
+                navigation.navbar
               </span>
             </span>
-            Example table
+            Navbar
           </a>
         </h2>
 
+                  <div class="kss-description">
+            <p>A simple component to get navigation links to appear in one line. This is
+mainly used to create navigation for small subsections on the application.</p>
+
+          </div>
         
               </div>
 
@@ -126,16 +136,50 @@
 
           
           <div class="kss-modifier__example">
-            example-table.hbs
+            <ul class="navbar">
+      <li class="navbar__item">
+      <a href="#" class="navbar__link is-active">
+        First item
+      </a>
+    </li>
+      <li class="navbar__item">
+      <a href="#" class="navbar__link">
+        Second item
+      </a>
+    </li>
+      <li class="navbar__item">
+      <a href="#" class="navbar__link">
+        Third item
+      </a>
+    </li>
+  </ul>
+
           </div>
 
                   </div>
                   <div class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">example-table.hbs</code></pre>
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul class=&quot;navbar&quot;&gt;
+      &lt;li class=&quot;navbar__item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;navbar__link is-active&quot;&gt;
+        First item
+      &lt;/a&gt;
+    &lt;/li&gt;
+      &lt;li class=&quot;navbar__item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;navbar__link&quot;&gt;
+        Second item
+      &lt;/a&gt;
+    &lt;/li&gt;
+      &lt;li class=&quot;navbar__item&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;navbar__link&quot;&gt;
+        Third item
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+</code></pre>
           </div>
               
               <div class="kss-source kss-style">
-          Source: <code>components/table/example-table/example-table.scss</code>, line 1
+          Source: <code>navigation/navbar/navbar.scss</code>, line 1
         </div>
           </section>
   </article>

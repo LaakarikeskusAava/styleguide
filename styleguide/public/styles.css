@@ -219,6 +219,90 @@ label {
   display: block;
 }
 
+.slider {
+  color: #aaa;
+  position: relative;
+  border: 1px solid #e6e6e6;
+  padding: 30px 60px;
+}
+
+.slider__max {
+  position: absolute;
+  top: 25px;
+  right: 21px;
+}
+
+.slider__min {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+/**
+ * Jquery UI overrides.
+ */
+.ui-slider .slider__handle.ui-slider-handle {
+  width: 2em;
+  height: 2em;
+  border-radius: 100px;
+  top: 50%;
+  margin-top: -1.05em;
+  margin-left: -1.2em;
+  text-align: center;
+  line-height: 2em;
+  padding: 1px 1px 0 0;
+  background: #1f9ad7;
+  color: #FFFFFF;
+  cursor: pointer;
+  border: none;
+}
+
+.ui-slider .slider__handle.ui-slider-handle:active {
+  border: none;
+}
+
+.ui-slider.ui-widget.ui-widget-content {
+  border: 1px solid #e6e6e6;
+}
+
+.navbar {
+  font-size: 1.05em;
+  z-index: 5;
+  border-bottom: 1px solid #A9A9A9;
+  padding: 0;
+}
+
+.navbar__item {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.navbar__link {
+  padding: 15px 0;
+  margin-bottom: -1px;
+  z-index: 10;
+}
+
+.navbar__link.is-active {
+  display: block;
+  border-bottom: 4px solid #1f9ad7;
+}
+
+.details__summary {
+  background: url("images/arrow-blue-thin.svg") center right no-repeat;
+  background-size: 15px;
+  cursor: pointer;
+}
+.details__summary::-webkit-details-marker {
+  display: none;
+}
+
+.details[open] .details__summary {
+  background-image: url("images/arrow-down-blue.svg");
+  background-size: 18px;
+  margin-bottom: 12.5px;
+}
+
 @keyframes placeHolderShimmer {
   0% {
     background-position: -468px 0;

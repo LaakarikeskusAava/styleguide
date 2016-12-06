@@ -33,13 +33,31 @@
 // Style guide: forms
 @import "./components/forms/forms.scss";
 @import "./components/forms/example/example.scss";
+@import "./components/forms/slider/slider.scss";
+
+// Navigation
+//
+// Navigation components are specialized design components that are used for
+// page navigation.
+//
+// Weight: 4
+//
+// Style guide: navigation
+@import "./navigation/navbar/navbar.scss";
+
+// Details
+//
+// Weight: 5
+//
+// Style guide: details
+@import "./components/details/details.scss";
 
 // Loading effects
 //
 // When something on the UI is on a loading state, loading effect should take a
 // place.
 //
-// Weight: 4
+// Weight: 6
 //
 // Style guide: loaders
 @import "./components/content-loading/content-loading.scss";
