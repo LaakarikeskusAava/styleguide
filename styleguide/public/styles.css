@@ -394,25 +394,25 @@ label {
   font-weight: bold;
 }
 
-.table__content:before {
+.table--mobile-headers {
+  padding-left: 25%;
+  position: relative;
+}
+.table--mobile-headers .table__content:before {
   font-weight: bold;
   content: attr(data-mobile-label);
   display: inline-block;
   width: 25%;
   position: absolute;
   left: 0;
+  padding: 0 10px;
 }
-.table__content:first-child {
+.table--mobile-headers .table__content:first-child {
   padding-bottom: 10px;
   padding-left: 0;
 }
-.table__content:first-child:before {
+.table--mobile-headers .table__content:first-child:before {
   content: "";
-}
-
-.table--mobile-headers {
-  padding-left: 25%;
-  position: relative;
 }
 
 .table--details details {

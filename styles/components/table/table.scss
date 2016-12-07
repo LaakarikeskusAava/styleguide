@@ -52,6 +52,8 @@
 //
 // Markup: table-mobile.twig
 //
+// .table--mobile-headers - Table that requires labels visible on the mobile.
+//
 // Style guide: tables.mobile
 .table--mobile {
   width: 100%;
@@ -69,29 +71,29 @@
   font-weight: bold;
 }
 
-.table__content {
-  &:before {
-    font-weight: bold;
-    content: attr(data-mobile-label);
-    display: inline-block;
-    width: 25%;
-    position: absolute;
-    left: 0;
-  }
-
-  &:first-child {
-    padding-bottom: 10px;
-    padding-left: 0;
-
-    &:before {
-      content: "";
-    }
-  }
-}
-
 .table--mobile-headers {
   padding-left: 25%;
   position: relative;
+
+  .table__content {
+    &:before {
+      font-weight: bold;
+      content: attr(data-mobile-label);
+      display: inline-block;
+      width: 25%;
+      position: absolute;
+      left: 0;
+      padding: 0 10px;
+    }
+    &:first-child {
+      padding-bottom: 10px;
+      padding-left: 0;
+
+      &:before {
+        content: "";
+      }
+    }
+  }
 }
 
 .table--details {
@@ -102,3 +104,13 @@
     width: 10%;
   }
 }
+
+// Table small screen single column
+//
+// This component is useful for visualizing small amounts of data on small screens.
+//
+// Weight: 3
+//
+// Markup: table-single-column.twig
+//
+// Style guide: tables.single-column

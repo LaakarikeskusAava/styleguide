@@ -79,6 +79,12 @@
                 ><span class="kss-nav__name">Table small screens</span>
               </a>
             </li>
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-tables.html#kssref-tables-single-column">
+                <span class="kss-nav__ref ">8.3</span
+                ><span class="kss-nav__name">Table small screen single column</span>
+              </a>
+            </li>
                     </ul>
               </li>
         </ul>
@@ -215,26 +221,29 @@
 
               <div class="kss-modifier__wrapper">
           <div class="kss-modifier__heading kss-style">
-            Example          </div>
+            Examples          </div>
 
+                      <div class="kss-modifier__default-name kss-style">
+              Default styling
+            </div>
           
           <div class="kss-modifier__example">
-            <table class="table table--content table--mobile ">
+            <table class="table table--content table--mobile [modifier class]">
       <tr class="table__row table__row--odd">
                                               <td class="table__cell table__left">
               <div>1.11.2016</div>
             </td>
             <td class="table__cell table__right">
-                                                                                    <div class="table__content" >
+                                                                                    <div class="table__content" data-mobile-label="Diagnoosi">
               J38.3 Toiminnallinen äänihuulisalpaus (VCD)
             </div>
-                                                                          <div class="table__content" >
+                                                                          <div class="table__content" data-mobile-label="Sairasloma">
               <span class='whitespace-no-wrap'>Sairaus, 15pv</span>
             </div>
-                                                                          <div class="table__content" >
+                                                                          <div class="table__content" data-mobile-label="Lääkäri">
               <a href='#'>Mikko Mikkonen</a>
             </div>
-                                                                          <div class="table__content" >
+                                                                          <div class="table__content" data-mobile-label="Hoito">
               <a href='#'>Ohje</a>
             </div>
                               </td>
@@ -244,16 +253,16 @@
               <div>1.11.2016</div>
             </td>
             <td class="table__cell table__right">
-                                                                                    <div class="table__content" >
+                                                                                    <div class="table__content" data-mobile-label="Diagnoosi">
               A07.9 Määrittämätön suoliston alkueläintauti
             </div>
-                                                                          <div class="table__content" >
+                                                                          <div class="table__content" data-mobile-label="Sairasloma">
               <span class='whitespace-no-wrap'>Sairaus, 2pv</span>
             </div>
-                                                                          <div class="table__content" >
+                                                                          <div class="table__content" data-mobile-label="Lääkäri">
               <a href='#'>Tuukka Tukkanen</a>
             </div>
-                                                                          <div class="table__content" >
+                                                                          <div class="table__content" data-mobile-label="Hoito">
               <a href='#'>Ohje</a>
             </div>
                               </td>
@@ -261,24 +270,72 @@
   </table>
           </div>
 
+                      <div class="kss-modifier__name kss-style">
+              .table--mobile-headers
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Table that requires labels visible on the mobile.
+            </div>
+            <div class="kss-modifier__example">
+              <table class="table table--content table--mobile table--mobile-headers">
+      <tr class="table__row table__row--odd">
+                                              <td class="table__cell table__left">
+              <div>1.11.2016</div>
+            </td>
+            <td class="table__cell table__right">
+                                                                                    <div class="table__content" data-mobile-label="Diagnoosi">
+              J38.3 Toiminnallinen äänihuulisalpaus (VCD)
+            </div>
+                                                                          <div class="table__content" data-mobile-label="Sairasloma">
+              <span class='whitespace-no-wrap'>Sairaus, 15pv</span>
+            </div>
+                                                                          <div class="table__content" data-mobile-label="Lääkäri">
+              <a href='#'>Mikko Mikkonen</a>
+            </div>
+                                                                          <div class="table__content" data-mobile-label="Hoito">
+              <a href='#'>Ohje</a>
+            </div>
+                              </td>
+    </tr>
+      <tr class="table__row table__row--even">
+                                              <td class="table__cell table__left">
+              <div>1.11.2016</div>
+            </td>
+            <td class="table__cell table__right">
+                                                                                    <div class="table__content" data-mobile-label="Diagnoosi">
+              A07.9 Määrittämätön suoliston alkueläintauti
+            </div>
+                                                                          <div class="table__content" data-mobile-label="Sairasloma">
+              <span class='whitespace-no-wrap'>Sairaus, 2pv</span>
+            </div>
+                                                                          <div class="table__content" data-mobile-label="Lääkäri">
+              <a href='#'>Tuukka Tukkanen</a>
+            </div>
+                                                                          <div class="table__content" data-mobile-label="Hoito">
+              <a href='#'>Ohje</a>
+            </div>
+                              </td>
+    </tr>
+  </table>
+            </div>
                   </div>
                   <div class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;table table--content table--mobile &quot;&gt;
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;table table--content table--mobile [modifier class]&quot;&gt;
       &lt;tr class=&quot;table__row table__row--odd&quot;&gt;
                                               &lt;td class=&quot;table__cell table__left&quot;&gt;
               &lt;div&gt;1.11.2016&lt;/div&gt;
             &lt;/td&gt;
             &lt;td class=&quot;table__cell table__right&quot;&gt;
-                                                                                    &lt;div class=&quot;table__content&quot; &gt;
+                                                                                    &lt;div class=&quot;table__content&quot; data-mobile-label=&quot;Diagnoosi&quot;&gt;
               J38.3 Toiminnallinen äänihuulisalpaus (VCD)
             &lt;/div&gt;
-                                                                          &lt;div class=&quot;table__content&quot; &gt;
+                                                                          &lt;div class=&quot;table__content&quot; data-mobile-label=&quot;Sairasloma&quot;&gt;
               &lt;span class=&#039;whitespace-no-wrap&#039;&gt;Sairaus, 15pv&lt;/span&gt;
             &lt;/div&gt;
-                                                                          &lt;div class=&quot;table__content&quot; &gt;
+                                                                          &lt;div class=&quot;table__content&quot; data-mobile-label=&quot;Lääkäri&quot;&gt;
               &lt;a href=&#039;#&#039;&gt;Mikko Mikkonen&lt;/a&gt;
             &lt;/div&gt;
-                                                                          &lt;div class=&quot;table__content&quot; &gt;
+                                                                          &lt;div class=&quot;table__content&quot; data-mobile-label=&quot;Hoito&quot;&gt;
               &lt;a href=&#039;#&#039;&gt;Ohje&lt;/a&gt;
             &lt;/div&gt;
                               &lt;/td&gt;
@@ -288,16 +345,16 @@
               &lt;div&gt;1.11.2016&lt;/div&gt;
             &lt;/td&gt;
             &lt;td class=&quot;table__cell table__right&quot;&gt;
-                                                                                    &lt;div class=&quot;table__content&quot; &gt;
+                                                                                    &lt;div class=&quot;table__content&quot; data-mobile-label=&quot;Diagnoosi&quot;&gt;
               A07.9 Määrittämätön suoliston alkueläintauti
             &lt;/div&gt;
-                                                                          &lt;div class=&quot;table__content&quot; &gt;
+                                                                          &lt;div class=&quot;table__content&quot; data-mobile-label=&quot;Sairasloma&quot;&gt;
               &lt;span class=&#039;whitespace-no-wrap&#039;&gt;Sairaus, 2pv&lt;/span&gt;
             &lt;/div&gt;
-                                                                          &lt;div class=&quot;table__content&quot; &gt;
+                                                                          &lt;div class=&quot;table__content&quot; data-mobile-label=&quot;Lääkäri&quot;&gt;
               &lt;a href=&#039;#&#039;&gt;Tuukka Tukkanen&lt;/a&gt;
             &lt;/div&gt;
-                                                                          &lt;div class=&quot;table__content&quot; &gt;
+                                                                          &lt;div class=&quot;table__content&quot; data-mobile-label=&quot;Hoito&quot;&gt;
               &lt;a href=&#039;#&#039;&gt;Ohje&lt;/a&gt;
             &lt;/div&gt;
                               &lt;/td&gt;
@@ -307,6 +364,69 @@
               
               <div class="kss-source kss-style">
           Source: <code>components/table/table.scss</code>, line 47
+        </div>
+          </section>
+          <section id="kssref-tables-single-column" class="kss-section kss-section--depth-2">
+      <div class="kss-style">
+                <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-tables-single-column">
+            <span class="kss-title__ref">
+              8.3
+              <span class="kss-title__permalink-hash">
+                tables.single-column
+              </span>
+            </span>
+            Table small screen single column
+          </a>
+        </h2>
+
+                  <div class="kss-description">
+            <p>This component is useful for visualizing small amounts of data on small screens.</p>
+
+          </div>
+        
+              </div>
+
+              <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example          </div>
+
+          
+          <div class="kss-modifier__example">
+            <table class="table table--content table--mobile table--single-column ">
+    <tr class="table__row table__row--odd">
+      <td class="table__cell">
+        <div class="table__content" data-mobile-label="Pvm">1.11.2016</div><div class="table__content" data-mobile-label="Diagnoosi">J38.3 Toiminnallinen äänihuulisalpaus (VCD)</div><div class="table__content" data-mobile-label="Sairasloma"><span class='whitespace-no-wrap'>Sairaus, 15pv</span></div><div class="table__content" data-mobile-label="Lääkäri"><a href='#'>Mikko Mikkonen</a></div><div class="table__content" data-mobile-label="Hoito"><a href='#'>Ohje</a></div>
+      </td>
+    </tr>
+  
+    <tr class="table__row table__row--even">
+      <td class="table__cell">
+        <div class="table__content" data-mobile-label="Pvm">1.11.2016</div><div class="table__content" data-mobile-label="Diagnoosi">A07.9 Määrittämätön suoliston alkueläintauti</div><div class="table__content" data-mobile-label="Sairasloma"><span class='whitespace-no-wrap'>Sairaus, 2pv</span></div><div class="table__content" data-mobile-label="Lääkäri"><a href='#'>Tuukka Tukkanen</a></div><div class="table__content" data-mobile-label="Hoito"><a href='#'>Ohje</a></div>
+      </td>
+    </tr>
+  </table>
+          </div>
+
+                  </div>
+                  <div class="kss-markup kss-style">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;table table--content table--mobile table--single-column &quot;&gt;
+    &lt;tr class=&quot;table__row table__row--odd&quot;&gt;
+      &lt;td class=&quot;table__cell&quot;&gt;
+        &lt;div class=&quot;table__content&quot; data-mobile-label=&quot;Pvm&quot;&gt;1.11.2016&lt;/div&gt;&lt;div class=&quot;table__content&quot; data-mobile-label=&quot;Diagnoosi&quot;&gt;J38.3 Toiminnallinen äänihuulisalpaus (VCD)&lt;/div&gt;&lt;div class=&quot;table__content&quot; data-mobile-label=&quot;Sairasloma&quot;&gt;&lt;span class=&#039;whitespace-no-wrap&#039;&gt;Sairaus, 15pv&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;table__content&quot; data-mobile-label=&quot;Lääkäri&quot;&gt;&lt;a href=&#039;#&#039;&gt;Mikko Mikkonen&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;table__content&quot; data-mobile-label=&quot;Hoito&quot;&gt;&lt;a href=&#039;#&#039;&gt;Ohje&lt;/a&gt;&lt;/div&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  
+    &lt;tr class=&quot;table__row table__row--even&quot;&gt;
+      &lt;td class=&quot;table__cell&quot;&gt;
+        &lt;div class=&quot;table__content&quot; data-mobile-label=&quot;Pvm&quot;&gt;1.11.2016&lt;/div&gt;&lt;div class=&quot;table__content&quot; data-mobile-label=&quot;Diagnoosi&quot;&gt;A07.9 Määrittämätön suoliston alkueläintauti&lt;/div&gt;&lt;div class=&quot;table__content&quot; data-mobile-label=&quot;Sairasloma&quot;&gt;&lt;span class=&#039;whitespace-no-wrap&#039;&gt;Sairaus, 2pv&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;table__content&quot; data-mobile-label=&quot;Lääkäri&quot;&gt;&lt;a href=&#039;#&#039;&gt;Tuukka Tukkanen&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;table__content&quot; data-mobile-label=&quot;Hoito&quot;&gt;&lt;a href=&#039;#&#039;&gt;Ohje&lt;/a&gt;&lt;/div&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;</code></pre>
+          </div>
+              
+              <div class="kss-source kss-style">
+          Source: <code>components/table/table.scss</code>, line 108
         </div>
           </section>
   </article>
