@@ -288,6 +288,21 @@ label {
   border-bottom: 4px solid #1f9ad7;
 }
 
+.details__summary {
+  background: url("images/arrow-blue-thin.svg") center right no-repeat;
+  background-size: 15px;
+  cursor: pointer;
+}
+.details__summary::-webkit-details-marker {
+  display: none;
+}
+
+.details[open] .details__summary {
+  background-image: url("images/arrow-down-blue.svg");
+  background-size: 18px;
+  margin-bottom: 12.5px;
+}
+
 @keyframes placeHolderShimmer {
   0% {
     background-position: -468px 0;
@@ -327,4 +342,72 @@ label {
 
 .content-loading--vertical-space {
   margin-bottom: 13px;
+}
+
+.table {
+  display: table;
+  text-align: left;
+  width: 100%;
+}
+
+.table__header {
+  text-align: left;
+  font-weight: bold;
+  border-top: solid 1px #e6e6e6;
+  border-bottom: solid 1px #e6e6e6;
+  padding: 15px 10px;
+}
+
+.table__row {
+  background: #fff;
+  width: 100%;
+  border-bottom: solid 1px #e6e6e6;
+}
+
+.table__row--odd {
+  background: #fafafa;
+}
+
+.table__cell {
+  padding: 15px 10px;
+}
+
+.table__label {
+  font-weight: bold;
+}
+
+.table__sub-row:first-child .table__cell {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.table__sub-row:last-child .table__cell {
+  padding-bottom: 15px;
+}
+
+.table--details details {
+  font-weight: normal;
+}
+.table--details td:first-child {
+  width: 10%;
+}
+
+.table--mobile .table__row:first-child {
+  border-top: solid 1px #e6e6e6;
+}
+.table--mobile .table__label {
+  display: none;
+}
+
+.table--mobile-headers .table__label {
+  display: inline;
+}
+
+.table--two-column .table__cell {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.table--single-column .table__content:first-child {
+  font-weight: bold;
+  padding-bottom: 10px;
 }

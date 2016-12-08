@@ -41,14 +41,6 @@
         <a class="kss-nav__menu-link" href="section-lists.html">
           <span class="kss-nav__ref">3</span><span class="kss-nav__name">Lists</span>
         </a>
-                  <ul class="kss-nav__menu-child">
-                      <li class="kss-nav__menu-item">
-              <a class="kss-nav__menu-link" href="section-lists.html#kssref-lists-simple">
-                <span class="kss-nav__ref ">3.1</span
-                ><span class="kss-nav__name">List of links</span>
-              </a>
-            </li>
-                    </ul>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-forms.html">
@@ -64,6 +56,14 @@
         <a class="kss-nav__menu-link" href="section-details.html">
           <span class="kss-nav__ref">6</span><span class="kss-nav__name">Details</span>
         </a>
+                  <ul class="kss-nav__menu-child">
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-details.html#kssref-details-default">
+                <span class="kss-nav__ref ">6.1</span
+                ><span class="kss-nav__name">Details</span>
+              </a>
+            </li>
+                    </ul>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-loaders.html">
@@ -81,17 +81,17 @@
 <article role="main" class="kss-main">
 
   
-          <div id="kssref-lists" class="kss-section kss-section--depth-1">
+          <div id="kssref-details" class="kss-section kss-section--depth-1">
       <div class="kss-style">
                 <h1 class="kss-title kss-title--level-1">
-          <a class="kss-title__permalink" href="#kssref-lists">
+          <a class="kss-title__permalink" href="#kssref-details">
             <span class="kss-title__ref">
-              3
+              6
               <span class="kss-title__permalink-hash">
-                lists
+                details
               </span>
             </span>
-            Lists
+            Details
           </a>
         </h1>
 
@@ -100,28 +100,27 @@
 
       
               <div class="kss-source kss-style">
-          Source: <code>styles.scss</code>, line 20
+          Source: <code>styles.scss</code>, line 48
         </div>
           </div>
-          <section id="kssref-lists-simple" class="kss-section kss-section--depth-2">
+          <section id="kssref-details-default" class="kss-section kss-section--depth-2">
       <div class="kss-style">
                 <h2 class="kss-title kss-title--level-2">
-          <a class="kss-title__permalink" href="#kssref-lists-simple">
+          <a class="kss-title__permalink" href="#kssref-details-default">
             <span class="kss-title__ref">
-              3.1
+              6.1
               <span class="kss-title__permalink-hash">
-                lists.simple
+                details.default
               </span>
             </span>
-            List of links
+            Details
           </a>
         </h2>
 
                   <div class="kss-description">
-            <p>Simple link list is being used in places where there is only one row of
-content and there is a link where to find more. This style is usually used in
-areas where there is limited amount of space available for the list such as
-blocks.</p>
+            <p>Component can be used to create an interactive widget that the user can open
+and close. This allows to show additional details that the user can view or
+hide on demand.</p>
 
           </div>
         
@@ -133,54 +132,24 @@ blocks.</p>
 
           
           <div class="kss-modifier__example">
-            <div class="list ">
-  <h2 class="list__title">List title</h2>
-    <div class="list__wrapper">
-      <div class="-list__content">
-        <a href="#" class="list__item">
-          <span class="list__text">Lorem ipsum dolor sit amet</span>
-        </a>
-        <a href="#" class="list__item">
-          <span class="list__text">Lorem ipsum dolor sit amet</span>
-        </a>
-        <a href="#" class="list__item">
-          <span class="list__text">Lorem ipsum dolor sit amet</span>
-        </a>
-      </div>
-    </div>
-  </div>
-  <a href="#">+ Show all</a>
-</div>
-
+            <details class="details ">
+  <summary class="details__summary">Lorem ipsum dolor sit amet</summary>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a quam ut elit sodales scelerisque. Nunc dolor lorem, mattis quis risus pretium, pulvinar porta lorem. Nullam vestibulum lorem semper augue sagittis viverra. Aenean ac leo nec turpis tincidunt consequat. Quisque pellentesque metus sed mattis eleifend. Morbi blandit velit eget porta tempor. Etiam feugiat risus nec diam vestibulum porttitor. Duis consectetur, lorem vel ornare facilisis, urna tellus ultrices nibh, id convallis neque tortor ac augue. Praesent commodo lacus eu cursus feugiat. Duis id convallis arcu. Phasellus ante lacus, pharetra vitae consequat ac, finibus eget nisl.
+</details>
 
           </div>
 
                   </div>
                   <div class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;list &quot;&gt;
-  &lt;h2 class=&quot;list__title&quot;&gt;List title&lt;/h2&gt;
-    &lt;div class=&quot;list__wrapper&quot;&gt;
-      &lt;div class=&quot;-list__content&quot;&gt;
-        &lt;a href=&quot;#&quot; class=&quot;list__item&quot;&gt;
-          &lt;span class=&quot;list__text&quot;&gt;Lorem ipsum dolor sit amet&lt;/span&gt;
-        &lt;/a&gt;
-        &lt;a href=&quot;#&quot; class=&quot;list__item&quot;&gt;
-          &lt;span class=&quot;list__text&quot;&gt;Lorem ipsum dolor sit amet&lt;/span&gt;
-        &lt;/a&gt;
-        &lt;a href=&quot;#&quot; class=&quot;list__item&quot;&gt;
-          &lt;span class=&quot;list__text&quot;&gt;Lorem ipsum dolor sit amet&lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;a href=&quot;#&quot;&gt;+ Show all&lt;/a&gt;
-&lt;/div&gt;
-
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;details class=&quot;details &quot;&gt;
+  &lt;summary class=&quot;details__summary&quot;&gt;Lorem ipsum dolor sit amet&lt;/summary&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a quam ut elit sodales scelerisque. Nunc dolor lorem, mattis quis risus pretium, pulvinar porta lorem. Nullam vestibulum lorem semper augue sagittis viverra. Aenean ac leo nec turpis tincidunt consequat. Quisque pellentesque metus sed mattis eleifend. Morbi blandit velit eget porta tempor. Etiam feugiat risus nec diam vestibulum porttitor. Duis consectetur, lorem vel ornare facilisis, urna tellus ultrices nibh, id convallis neque tortor ac augue. Praesent commodo lacus eu cursus feugiat. Duis id convallis arcu. Phasellus ante lacus, pharetra vitae consequat ac, finibus eget nisl.
+&lt;/details&gt;
 </code></pre>
           </div>
               
               <div class="kss-source kss-style">
-          Source: <code>components/list/list.scss</code>, line 1
+          Source: <code>components/details/details.scss</code>, line 1
         </div>
           </section>
   </article>
