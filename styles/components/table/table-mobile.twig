@@ -1,0 +1,31 @@
+<table class="table table--content table--mobile table--two-column {{ modifier_class }}">
+  {% for row in table.rows %}
+    <tbody class="table__row table__row--{{ cycle(['odd', 'even'], loop.index0) }}">
+      {% for item in row %}
+        {% if loop.index == 1 %}
+          <tr class="table__sub-row">
+            <td class="table__cell">
+              {{- item -}}
+            </td>
+          {% if loop.length == 1 %}
+            </tr>
+          {% endif %}
+        {% elseif loop.index == 2 %}
+            <td class="table__cell">
+              <strong>{{ item }}</strong>
+            </td>
+          </tr>
+        {% else -%}
+          <tr class="table__sub-row">
+            <td class="table__cell">
+              <span class="table__label">{{- table.headers[loop.index0] -}}</span>
+            </td>
+            <td class="table__cell">
+              {{- item -}}
+            </td>
+          </tr>
+        {% endif %}
+      {% endfor %}
+    </tbody>
+  {% endfor %}
+</table>

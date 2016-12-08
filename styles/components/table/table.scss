@@ -1,0 +1,118 @@
+// Table large screens
+//
+// This component is useful for visualizing large amount of data on large screens.
+//
+// Weight: 1
+//
+// Markup: table.twig
+//
+// Style guide: tables.desktop
+
+.table {
+  display: table;
+  text-align: left;
+  width: 100%;
+}
+
+.table__header {
+  text-align: left;
+  font-weight: bold;
+  border-top: solid 1px #e6e6e6;
+  border-bottom: solid 1px #e6e6e6;
+  padding: 15px 10px;
+}
+
+.table__row {
+  background: #fff;
+  width: 100%;
+  border-bottom: solid 1px #e6e6e6;
+}
+
+.table__row--odd {
+  background: #fafafa;
+}
+
+.table__cell {
+  padding: 15px 10px;
+}
+
+.table__label {
+  font-weight: bold;
+}
+
+.table__sub-row {
+  &:first-child {
+    .table__cell {
+      padding-top: 15px;
+      padding-bottom: 10px;
+    }
+  }
+  &:last-child {
+    .table__cell {
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.table--details {
+  details {
+    font-weight: normal;
+  }
+  td:first-child {
+    width: 10%;
+  }
+}
+
+// Table small screens
+//
+// This component is useful for visualizing large amount of data on small screens.
+//
+// Weight: 2
+//
+// Markup: table-mobile.twig
+//
+// .table--mobile-headers - Table that requires labels visible on the mobile.
+//
+// Style guide: tables.mobile
+.table--mobile {
+  .table__row {
+    &:first-child {
+      border-top: solid 1px $border-grey-v2;
+    }
+  }
+
+  .table__label {
+    display: none;
+  }
+}
+
+.table--mobile-headers {
+  .table__label {
+    display: inline;
+  }
+}
+
+.table--two-column {
+  .table__cell {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+
+
+// Table small screen single column
+//
+// This component is useful for visualizing small amounts of data on small screens.
+//
+// Weight: 3
+//
+// Markup: table-single-column.twig
+//
+// Style guide: tables.single-column
+.table--single-column {
+  .table__content:first-child {
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+}
