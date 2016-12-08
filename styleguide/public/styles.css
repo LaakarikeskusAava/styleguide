@@ -391,9 +391,6 @@ label {
   width: 10%;
 }
 
-.table--mobile {
-  width: 100%;
-}
 .table--mobile .table__row:first-child {
   border-top: solid 1px #e6e6e6;
 }
