@@ -36,14 +36,32 @@
   padding: 15px 10px;
 }
 
-.table__left {
-  padding-right: 10px;
+.table__label {
+  font-weight: bold;
 }
 
-.table__right {
-  padding-left: 10px;
+.table__sub-row {
+  &:first-child {
+    .table__cell {
+      padding-top: 15px;
+      padding-bottom: 10px;
+    }
+  }
+  &:last-child {
+    .table__cell {
+      padding-bottom: 15px;
+    }
+  }
 }
 
+.table--details {
+  details {
+    font-weight: normal;
+  }
+  td:first-child {
+    width: 10%;
+  }
+}
 
 // Table small screens
 //
@@ -59,52 +77,31 @@
 .table--mobile {
   width: 100%;
 
-  tr:first-child {
-    border-top: solid 1px $border-grey-v2;
+  .table__row {
+    &:first-child {
+      border-top: solid 1px $border-grey-v2;
+    }
   }
-}
 
-.table__row {
-  padding: 12px 0;
-}
-
-.table__content:first-child {
-  font-weight: bold;
+  .table__label {
+    display: none;
+  }
 }
 
 .table--mobile-headers {
-  padding-left: 25%;
-  position: relative;
-
-  .table__content {
-    &:before {
-      font-weight: bold;
-      content: attr(data-mobile-label);
-      display: inline-block;
-      width: 25%;
-      position: absolute;
-      left: 0;
-      padding: 0 10px;
-    }
-    &:first-child {
-      padding-bottom: 10px;
-      padding-left: 0;
-
-      &:before {
-        content: "";
-      }
-    }
+  .table__label {
+    display: inline;
   }
 }
 
-.table--details {
-  details {
-    font-weight: normal;
-  }
-  td:first-child {
-    width: 10%;
+.table--two-column {
+  .table__cell {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
+
+
 
 // Table small screen single column
 //
@@ -115,3 +112,9 @@
 // Markup: table-single-column.twig
 //
 // Style guide: tables.single-column
+.table--single-column {
+  .table__content:first-child {
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+}
