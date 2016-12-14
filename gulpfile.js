@@ -22,7 +22,7 @@ options.styleGuide = {
   destination: options.rootPath.styleGuide,
   mask: /\.sass|\.scss/,
   css: [
-    'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.structure.css',
     'public/styles.css'
   ],
   js: [
