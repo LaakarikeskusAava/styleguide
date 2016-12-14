@@ -1,5 +1,6 @@
 # Lääkärikeskus Aava Styleguide #
 This styleguide uses KSS to build a living styleguide.
+https://laakarikeskusaava.github.io/styleguide/
 
 ## Installation
 ```
