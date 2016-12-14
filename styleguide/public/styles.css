@@ -72,6 +72,36 @@ html {
   box-sizing: inherit;
 }
 
+/**
+ * Hide elements visually, but keep them available for screen readers.
+ *
+ * Used for information required for screen reader users to understand and use
+ * the site where visual display is undesirable. Information provided in this
+ * manner should be kept concise, to avoid unnecessary burden on the user.
+ * "!important" is used to prevent unintentional overrides.
+ */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
+/**
+ * The .focusable class extends the .visually-hidden class to allow
+ * the element to be focusable when navigated to via the keyboard.
+ */
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  position: static !important;
+  clip: auto;
+  overflow: visible;
+  height: auto;
+  width: auto;
+}
+
 h1, h2, h3 {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -220,49 +250,46 @@ label {
 }
 
 .slider {
+  background: #fff;
   color: #aaa;
   position: relative;
   border: 1px solid #e6e6e6;
-  padding: 30px 60px;
+  border-radius: 3px;
+  padding: 20px 60px 20px 55px;
+  margin-top: .4em;
+}
+.slider .slider__handle {
+  width: 2em;
+  height: 2em;
+  border-radius: 100px;
+  top: 50%;
+  margin-top: -1em;
+  margin-left: -1em;
+  text-align: center;
+  line-height: 2em;
+  padding: 0 1px 0 0;
+  background: #1f9ad7;
+  color: #FFFFFF;
+  cursor: pointer;
+  border: 0;
 }
 
 .slider__max {
   position: absolute;
-  top: 25px;
+  top: 14px;
   right: 21px;
 }
 
 .slider__min {
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 14px;
+  left: 23px;
 }
 
-/**
- * Jquery UI overrides.
- */
-.ui-slider .slider__handle.ui-slider-handle {
-  width: 2em;
-  height: 2em;
-  border-radius: 100px;
-  top: 50%;
-  margin-top: -1.05em;
-  margin-left: -1.2em;
-  text-align: center;
-  line-height: 2em;
-  padding: 1px 1px 0 0;
-  background: #1f9ad7;
-  color: #FFFFFF;
-  cursor: pointer;
-  border: none;
-}
-
-.ui-slider .slider__handle.ui-slider-handle:active {
-  border: none;
-}
-
-.ui-slider.ui-widget.ui-widget-content {
+.slider__path {
+  background: #fbfbfb;
   border: 1px solid #e6e6e6;
+  border-radius: 3px;
 }
 
 .navbar {
