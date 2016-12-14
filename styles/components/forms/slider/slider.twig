@@ -1,9 +1,8 @@
-{% for element in elements %}
-  <div class="slider slider-{{ element.name }} js-slider" data-min="{{ element.min }}" data-max="{{ element.max }}">
-    <span class="slider__min">{{ element.min }}</span>
-    <div class="slider__path js-slider-path">
-      <span class="slider__handle js-slider-handle ui-slider-handle"></span>
-    </div>
-    <span class="slider__max">{{ element.max }}</span>
+<div class="slider js-slider" data-min="{{ min }}" data-max="{{ max }}">
+  <span class="slider__min">{{ min }}</span>
+  <span class="slider__input js-slider-input visually-hidden">{{ input }}</span>
+  <div class="slider__path js-slider-path">
+    <span class="slider__handle js-slider-handle ui-slider-handle"></span>
   </div>
-{% endfor %}
+  <span class="slider__max">{{ max }}</span>
+</div>
