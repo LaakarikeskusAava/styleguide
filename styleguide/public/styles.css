@@ -344,12 +344,12 @@ label {
   margin-bottom: 13px;
 }
 
-.showbox {
+.throbber-wrapper {
   position: relative;
   padding: 5%;
 }
 
-.loader {
+.throbber {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -358,13 +358,13 @@ label {
   margin: 0 auto;
   width: 50px;
 }
-.loader:before {
+.throbber:before {
   content: '';
   display: block;
   padding-top: 100%;
 }
 
-.circular {
+.throbber__image {
   animation: rotate 2s linear infinite;
   height: 100%;
   transform-origin: center center;
@@ -377,7 +377,7 @@ label {
   margin: auto;
 }
 
-.path {
+.throbber__path {
   stroke-dasharray: 1, 200;
   stroke-dashoffset: 0;
   animation: dash 1.5s ease-in-out infinite, color 4.5s ease-in-out infinite;
@@ -406,7 +406,7 @@ label {
 @keyframes color {
   100%,
   0%, 30% {
-    stroke: #009BFD;
+    stroke: #1f9ad7;
   }
   48%,
   60% {
@@ -414,7 +414,7 @@ label {
   }
   75%,
   95% {
-    stroke: #9ECB3B;
+    stroke: #AAC506;
   }
 }
 .table {
