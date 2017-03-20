@@ -54,9 +54,6 @@ body {
 a {
   color: $links;
   text-decoration: none;
-  &:visited {
-    color: $links-visited;
-  }
 }
 
 strong {

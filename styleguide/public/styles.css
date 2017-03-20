@@ -106,6 +106,13 @@ ul, ol {
   border: 0;
 }
 
+a {
+  color: #1f9ad7;
+}
+a:visited {
+  color: #00688f;
+}
+
 .c-button {
   font-size: 1em;
   line-height: 1.2em;
