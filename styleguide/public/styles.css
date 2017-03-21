@@ -109,7 +109,7 @@ ul, ol {
 a {
   color: #1f9ad7;
 }
-a:visited {
+a:visited, a.pseudo-class-visited {
   color: #00688f;
 }
 
