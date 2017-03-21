@@ -3,17 +3,17 @@ $links-visited: #00688f;
 
 // Link
 //
-// Simple link is being used in several places. 
+// Simple link is being used in several places.
 //
 // Markup: links.twig
 //
-// :visited - The colors is slightly darker in visited links.
+// :visited - The color is slightly darker in visited links.
 //
 // Style guide: typography.links
 
 a {
   color: $links;
-  &:visited {
+  &:visited, &.pseudo-class-visited {
     color: $links-visited;
   }
 }
