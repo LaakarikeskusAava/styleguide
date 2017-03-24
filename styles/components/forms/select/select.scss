@@ -3,3 +3,56 @@
 // Markup: select.twig
 //
 // Style guide: forms.select
+
+.chosen-container {
+  font-size: inherit;
+}
+.chosen-container,
+.chosen-container-single {
+  .chosen-single,
+  .chosen-search {
+    border-color: $border-grey-v2;
+    line-height: 35px;
+    height: auto;
+    background: $white;
+    background-image: none !important;
+    box-shadow: none;
+    div {
+      height: 100%;
+      b {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -11px;
+      }
+    }
+    span {
+      height: inherit;
+      margin-right: 26px;
+    }
+    abbr {
+      top: 50%;
+      margin-top: -6px;
+      right: 34px;
+    }
+  }
+
+  .chosen-single-with-deselect {
+    span {
+      margin-right: 26px;
+      padding-right: 26px;
+    }
+  }
+  .chosen-results {
+    li {
+      &.highlighted {
+        background: $blue;
+      }
+    }
+  }
+}
+.chosen-container-active {
+  .chosen-single {
+    border: 1px solid $border-dark-grey;
+  }
+}
