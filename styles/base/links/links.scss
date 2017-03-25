@@ -1,0 +1,19 @@
+$links: #1f9ad7;
+$links-visited: #00688f;
+
+// Link
+//
+// Simple link is being used in several places.
+//
+// Markup: links.twig
+//
+// :visited - The color is slightly darker in visited links.
+//
+// Style guide: typography.links
+
+a {
+  color: $links;
+  &:visited, &.pseudo-class-visited {
+    color: $links-visited;
+  }
+}
