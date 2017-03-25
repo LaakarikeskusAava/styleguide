@@ -29,7 +29,7 @@ options.styleGuide = {
     'https://code.jquery.com/jquery-1.12.4.js',
     'https://code.jquery.com/ui/1.12.0/jquery-ui.min.js',
     'https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js',
-    path.relative(options.rootPath.styleGuide, options.rootPath.styles + 'components/forms/slider/slider.js')
+    'public/javascript/components/forms/slider/slider.js'
   ],
   homepage: 'styleguide.md',
   title: 'Aava Styleguide'
@@ -56,7 +56,11 @@ gulp.task('images', function() {
   gulp.src(['styles/images/**'])
     .pipe(gulp.dest('styleguide/public/images'));
 });
+gulp.task('javascript', function() {
+  gulp.src(['styles/**/*.js'])
+    .pipe(gulp.dest('styleguide/public/javascript'));
+});
 
 gulp.task('default', function() {
-  runSequence(['clean', 'styleguide'], 'compass', 'images');
+  runSequence(['clean', 'styleguide'], 'compass', 'images', 'javascript');
 });
