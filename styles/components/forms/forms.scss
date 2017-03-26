@@ -19,6 +19,7 @@
 
 input {
   margin: 0 0 20px 0;
+  font-size: 1em;
 }
 input[type="tel"],
 input[type="text"],
@@ -34,7 +35,11 @@ select {
     border-color: $button-border-grey-active;
   }
 }
+select {
+  font-size: 0.875em;
+}
 textarea {
+  font-size: 1em;
   width: 100%;
   border: 1px solid $button-border-grey;
   border-radius: 4px;
