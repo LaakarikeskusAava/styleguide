@@ -121,7 +121,7 @@ a:visited, a.pseudo-class-visited {
   font-size: 1em;
   line-height: 1.2em;
   display: inline-block;
-  margin: 0;
+  margin-right: 0.5em;
   background-color: white;
   color: #000;
   border: 1px solid #e0e0e0;
@@ -243,6 +243,7 @@ a:visited, a.pseudo-class-visited {
 
 input {
   margin: 0 0 20px 0;
+  font-size: 1em;
 }
 
 input[type="tel"],
@@ -263,11 +264,17 @@ select:focus {
   border-color: #c0c0c0;
 }
 
+select {
+  font-size: 0.875em;
+}
+
 textarea {
+  font-size: 1em;
+  width: 100%;
   border: 1px solid #e0e0e0;
   border-radius: 4px;
   max-width: 100%;
-  padding: 0 8px;
+  padding: 8px;
 }
 textarea:focus {
   border-color: #c0c0c0;
@@ -282,10 +289,6 @@ select {
 
 label {
   display: block;
-}
-
-textarea {
-  width: 100%;
 }
 
 .slider {
