@@ -1,11 +1,10 @@
-// Reset :focus styles. @todo Research if later version of normalize.css would
-// handle this kind of issues
+// Reset :focus styles.
+// @todo Research if later version of normalize.css would handle this issue.
 :focus {
   outline: none;
 }
 
-// Due to missing :placeholder specification, we add placeholder color in
-// following way.
+// Due to missing :placeholder specification, we add placeholder color this way.
 // @todo If the standard settles down, move to one selector.
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: $grey4;
