@@ -1,0 +1,14 @@
+<table class="table table--content {{ modifier_class }}">
+  <tr>
+    {% for header in table.headers %}
+      <th class="table__header">{{ header }}</th>
+    {% endfor %}
+  </tr>
+  {% for row in table.rows %}
+    <tr class="table__row table__row--{{ cycle(['odd', 'even'], loop.index0) }}">
+      {% for item in row %}
+        <td class="table__cell">{{ item }}</td>
+      {% endfor %}
+    </tr>
+  {% endfor %}
+</table>

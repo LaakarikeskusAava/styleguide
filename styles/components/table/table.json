@@ -1,0 +1,27 @@
+{
+  "table": {
+    "headers": [
+      "Pvm",
+      "Diagnoosi",
+      "Sairasloma",
+      "Lääkäri",
+      "Hoito"
+    ],
+    "rows": [
+      [
+        "1.11.2016",
+        "J38.3 Toiminnallinen äänihuulisalpaus (VCD)",
+        "<span class='whitespace-no-wrap'>Sairaus, 15pv</span>",
+        "<a href='#'>Mikko Mikkonen</a>",
+        "<a href='#'>Ohje</a>"
+      ],
+      [
+        "1.11.2016",
+        "A07.9 Määrittämätön suoliston alkueläintauti",
+        "<span class='whitespace-no-wrap'>Sairaus, 2pv</span>",
+        "<a href='#'>Tuukka Tukkanen</a>",
+        "<a href='#'>Ohje</a>"
+      ]
+    ]
+  }
+}

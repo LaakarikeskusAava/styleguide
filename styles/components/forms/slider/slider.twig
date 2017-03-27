@@ -1,0 +1,9 @@
+{% for element in elements %}
+  <div class="slider slider-{{ element.name }} js-slider" data-min="{{ element.min }}" data-max="{{ element.max }}">
+    <span class="slider__min">{{ element.min }}</span>
+    <div class="slider__path js-slider-path">
+      <span class="slider__handle js-slider-handle ui-slider-handle"></span>
+    </div>
+    <span class="slider__max">{{ element.max }}</span>
+  </div>
+{% endfor %}

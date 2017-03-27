@@ -1,9 +1,3 @@
 {
-  "source": "./styles",
-  "css": [
-    "public/styles.css"
-  ],
-  "js": [],
-  "title": "Aava Styleguide",
-  "verbose": true
+
 }
