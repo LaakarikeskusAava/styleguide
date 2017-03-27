@@ -9,9 +9,6 @@
 //
 // Style guide: lists.simple
 
-// @todo Move to some other file?
-$vertical-rhythm: 25px;
-
 .list__content {
   border-top: 1px solid $border-grey-v2;
   margin-bottom: $vertical-rhythm;
@@ -26,8 +23,7 @@ $vertical-rhythm: 25px;
 .list__item--link {
   padding-top: 0;
   padding-bottom: 0;
-  // @todo Enable image-url().
-  background: url('images/arrow-blue-thin.svg') no-repeat;
+  background: url('images/arrow-blue-thin.svg') no-repeat; // @todo Enable image-url().
   background-size: auto 1em;
   background-position: right 10px center;
   transition: background .2s;
