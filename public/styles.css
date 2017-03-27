@@ -106,6 +106,13 @@ ul, ol {
   border: 0;
 }
 
+a {
+  color: #1f9ad7;
+}
+a:visited, a.pseudo-class-visited {
+  color: #00688f;
+}
+
 .c-button {
   font-size: 1em;
   line-height: 1.2em;
@@ -115,7 +122,7 @@ ul, ol {
   color: #000;
   border: 1px solid #CCCCCC;
   border-radius: 5px;
-  padding: 0.4em 17px 0.55em 17px;
+  padding: 0.55em 17px;
 }
 .c-button:hover, .c-button.pseudo-class-hover {
   background-color: #efefef;
@@ -171,20 +178,33 @@ ul, ol {
   padding-left: 26px;
 }
 
-.list__title {
-  border-bottom: 1px solid #CCCCCC;
-  padding-bottom: 15px;
-  margin-bottom: 10px;
+.list__content {
+  border-top: 1px solid #e6e6e6;
+  margin-bottom: 25px;
 }
 
 .list__item {
-  border-bottom: 1px solid #CCCCCC;
-  color: #000;
+  border-bottom: 1px solid #e6e6e6;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+}
+
+.list__item--link {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: url("images/arrow-blue-thin.svg") no-repeat;
+  background-size: auto 1em;
+  background-position: right 10px center;
+  transition: background .2s;
+}
+.list__item--link:hover {
+  background-position: right 5px center;
+}
+.list__item--link a {
   display: block;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-  background: url("images/arrow-blue.svg") right 7px no-repeat;
-  background-size: 18px 14px;
+  color: inherit;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
 }
 
 input {
