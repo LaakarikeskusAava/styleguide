@@ -14,6 +14,7 @@ $icon_width: 10px;
 //.c-button--grey - This variation should be used on secondary buttons.
 //.c-button--grey:hover - The colors invert while the button is being hovered.
 //.c-button--with-arrow - This variation is used on links.
+//.c-button--header - This variation is used on header.
 //
 // Style guide: buttons.call-to-action
 .c-button {
@@ -106,3 +107,30 @@ $icon_width: 10px;
   padding-left: 26px;
 }
 
+.c-button--header {
+  background: $white;
+  border-radius: 4px;
+  border: thin solid $button-border-grey;
+  display: block;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  .label {
+    color: $black;
+    display: inline;
+    font-weight: normal;
+    padding-right: 0.5em;
+  }
+}
+@media screen and (min-width: 769px) {
+  .c-button--header {
+    display: inline-block;
+    font-size: 1.125em;
+    margin-bottom: 0;
+    &:after {
+      margin-left: 3em;
+    }
+  }
+}
