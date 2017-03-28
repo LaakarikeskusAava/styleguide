@@ -229,9 +229,6 @@ a:visited, a.pseudo-class-visited {
     font-size: 1.125em;
     margin-bottom: 0;
   }
-  .c-button--header:after {
-    margin-left: 3em;
-  }
 }
 .list__content {
   border-top: 1px solid #e0e0e0;
