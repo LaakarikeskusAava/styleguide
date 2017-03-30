@@ -23,11 +23,14 @@ options.styleGuide = {
   mask: /\.sass|\.scss/,
   css: [
     'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/chosen/1.6.2/chosen.min.css',
     'public/styles.css'
   ],
   js: [
     'https://code.jquery.com/jquery-1.12.4.js',
     'https://code.jquery.com/ui/1.12.0/jquery-ui.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/chosen/1.6.2/chosen.jquery.min.js',
+    path.relative(options.rootPath.styleGuide, options.rootPath.styles + 'components/forms/select/select.js'),
     path.relative(options.rootPath.styleGuide, options.rootPath.styles + 'components/forms/slider/slider.js')
   ],
   homepage: 'styleguide.md',
