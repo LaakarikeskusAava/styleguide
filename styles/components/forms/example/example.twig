@@ -1,20 +1,27 @@
 <form>
   <label for="name">Name</label>
-  <input type="text" id="name">
+  <input type="text" id="name" placeholder="Name">
+
+  <label for="tel">Telephone</label>
+  <input type="tel" id="tel">
 
   <label for="email">Email address</label>
   <input type="email" id="email">
+
+  <label for="textarea">Textarea</label>
+  <textarea id="textarea" class="form-textarea" rows="5" cols="60" placeholder=""></textarea>
 
   <label>
     <input type="checkbox"> Remember me
   </label>
 
   <label>
-    <input type="radio" name="herpderp" checked> Herp
+    <input type="radio" name="some_selection" checked> Option A
   </label>
   <label>
-    <input type="radio" name="herpderp"> Derp
+    <input type="radio" name="some_selection"> Option B
   </label>
 
-  <button class="c-button c-button--blue" type="submit">Submit</button>
+  <input type="submit" id="edit-submit" name="op" value="Submit" class="form-submit c-button c-button c-button--blue">
+  <a href="#" class="c-button button--secondary" id="edit-return-link">Reset</a>
 </form>

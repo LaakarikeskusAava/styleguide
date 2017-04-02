@@ -32,6 +32,14 @@
         <a class="kss-nav__menu-link" href="section-colors.html">
           <span class="kss-nav__ref">1</span><span class="kss-nav__name">Colors</span>
         </a>
+                  <ul class="kss-nav__menu-child">
+                      <li class="kss-nav__menu-item">
+              <a class="kss-nav__menu-link" href="section-colors.html#kssref-colors-colors">
+                <span class="kss-nav__ref ">1.1</span
+                ><span class="kss-nav__name">Colors</span>
+              </a>
+            </li>
+                    </ul>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-typography.html">
@@ -42,14 +50,6 @@
         <a class="kss-nav__menu-link" href="section-buttons.html">
           <span class="kss-nav__ref">3</span><span class="kss-nav__name">Buttons</span>
         </a>
-                  <ul class="kss-nav__menu-child">
-                      <li class="kss-nav__menu-item">
-              <a class="kss-nav__menu-link" href="section-buttons.html#kssref-buttons-call-to-action">
-                <span class="kss-nav__ref ">3.1</span
-                ><span class="kss-nav__name">Call to action submit or link buttons</span>
-              </a>
-            </li>
-                    </ul>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-lists.html">
@@ -87,17 +87,17 @@
 <article role="main" class="kss-main">
 
   
-          <div id="kssref-buttons" class="kss-section kss-section--depth-1">
+          <div id="kssref-colors" class="kss-section kss-section--depth-1">
       <div class="kss-style">
                 <h1 class="kss-title kss-title--level-1">
-          <a class="kss-title__permalink" href="#kssref-buttons">
+          <a class="kss-title__permalink" href="#kssref-colors">
             <span class="kss-title__ref">
-              3
+              1
               <span class="kss-title__permalink-hash">
-                buttons
+                colors
               </span>
             </span>
-            Buttons
+            Colors
           </a>
         </h1>
 
@@ -106,20 +106,20 @@
 
       
               <div class="kss-source kss-style">
-          Source: <code>styles.scss</code>, line 21
+          Source: <code>styles.scss</code>, line 14
         </div>
           </div>
-          <section id="kssref-buttons-call-to-action" class="kss-section kss-section--depth-2">
+          <section id="kssref-colors-colors" class="kss-section kss-section--depth-2">
       <div class="kss-style">
                 <h2 class="kss-title kss-title--level-2">
-          <a class="kss-title__permalink" href="#kssref-buttons-call-to-action">
+          <a class="kss-title__permalink" href="#kssref-colors-colors">
             <span class="kss-title__ref">
-              3.1
+              1.1
               <span class="kss-title__permalink-hash">
-                buttons.call-to-action
+                colors.colors
               </span>
             </span>
-            Call to action submit or link buttons
+            Colors
           </a>
         </h2>
 
@@ -135,142 +135,97 @@
             </div>
           
           <div class="kss-modifier__example">
-            <a href="#" class="c-button [modifier class]">Link Button</a>
-<button class="c-button [modifier class]">Button Element</button>
-<input type="button" class="c-button [modifier class]" value="input[type='button']"/>
+            <div style="background: [modifier class];" class="styleguide-color">[modifier class]</div>
+
 
           </div>
 
                       <div class="kss-modifier__name kss-style">
-              .c-button--blue
+              #1f9ad7
             </div>
             <div class="kss-modifier__description kss-style">
-              This is the most common variation of the button. This should be used on all of the submit buttons.
+              : Main color
             </div>
             <div class="kss-modifier__example">
-              <a href="#" class="c-button c-button--blue">Link Button</a>
-<button class="c-button c-button--blue">Button Element</button>
-<input type="button" class="c-button c-button--blue" value="input[type='button']"/>
+              <div style="background: #1f9ad7;" class="styleguide-color">#1f9ad7</div>
+
 
             </div>
                       <div class="kss-modifier__name kss-style">
-              .c-button--blue:hover
+              #aac506
             </div>
             <div class="kss-modifier__description kss-style">
-              The colors invert while the button is being hovered.
+              : Secondary color
             </div>
             <div class="kss-modifier__example">
-              <a href="#" class="c-button c-button--blue pseudo-class-hover">Link Button</a>
-<button class="c-button c-button--blue pseudo-class-hover">Button Element</button>
-<input type="button" class="c-button c-button--blue pseudo-class-hover" value="input[type='button']"/>
+              <div style="background: #aac506;" class="styleguide-color">#aac506</div>
+
 
             </div>
                       <div class="kss-modifier__name kss-style">
-              .c-button--blue:active
+              #f9f9f9
             </div>
             <div class="kss-modifier__description kss-style">
-              The background color is 6% of original background color in active state.
+              : Grey 0
             </div>
             <div class="kss-modifier__example">
-              <a href="#" class="c-button c-button--blue pseudo-class-active">Link Button</a>
-<button class="c-button c-button--blue pseudo-class-active">Button Element</button>
-<input type="button" class="c-button c-button--blue pseudo-class-active" value="input[type='button']"/>
+              <div style="background: #f9f9f9;" class="styleguide-color">#f9f9f9</div>
+
 
             </div>
                       <div class="kss-modifier__name kss-style">
-              .c-button--green
+              #efefef
             </div>
             <div class="kss-modifier__description kss-style">
-              This variation can be used to highligt primary button in situations where multiple primary buttons exist.
+              : Grey 1
             </div>
             <div class="kss-modifier__example">
-              <a href="#" class="c-button c-button--green">Link Button</a>
-<button class="c-button c-button--green">Button Element</button>
-<input type="button" class="c-button c-button--green" value="input[type='button']"/>
+              <div style="background: #efefef;" class="styleguide-color">#efefef</div>
+
 
             </div>
                       <div class="kss-modifier__name kss-style">
-              .c-button--green:hover
+              #e0e0e0
             </div>
             <div class="kss-modifier__description kss-style">
-              The colors invert while the button is being hovered.
+              : Grey 2
             </div>
             <div class="kss-modifier__example">
-              <a href="#" class="c-button c-button--green pseudo-class-hover">Link Button</a>
-<button class="c-button c-button--green pseudo-class-hover">Button Element</button>
-<input type="button" class="c-button c-button--green pseudo-class-hover" value="input[type='button']"/>
+              <div style="background: #e0e0e0;" class="styleguide-color">#e0e0e0</div>
+
 
             </div>
                       <div class="kss-modifier__name kss-style">
-              .c-button--green:active
+              #c0c0c0
             </div>
             <div class="kss-modifier__description kss-style">
-              The background color is 6% of original background color in active state.
+              : Grey 3
             </div>
             <div class="kss-modifier__example">
-              <a href="#" class="c-button c-button--green pseudo-class-active">Link Button</a>
-<button class="c-button c-button--green pseudo-class-active">Button Element</button>
-<input type="button" class="c-button c-button--green pseudo-class-active" value="input[type='button']"/>
+              <div style="background: #c0c0c0;" class="styleguide-color">#c0c0c0</div>
+
 
             </div>
                       <div class="kss-modifier__name kss-style">
-              .c-button--grey
+              #999999
             </div>
             <div class="kss-modifier__description kss-style">
-              This variation should be used on secondary buttons.
+              : Grey 4
             </div>
             <div class="kss-modifier__example">
-              <a href="#" class="c-button c-button--grey">Link Button</a>
-<button class="c-button c-button--grey">Button Element</button>
-<input type="button" class="c-button c-button--grey" value="input[type='button']"/>
+              <div style="background: #999999;" class="styleguide-color">#999999</div>
 
-            </div>
-                      <div class="kss-modifier__name kss-style">
-              .c-button--grey:hover
-            </div>
-            <div class="kss-modifier__description kss-style">
-              The colors invert while the button is being hovered.
-            </div>
-            <div class="kss-modifier__example">
-              <a href="#" class="c-button c-button--grey pseudo-class-hover">Link Button</a>
-<button class="c-button c-button--grey pseudo-class-hover">Button Element</button>
-<input type="button" class="c-button c-button--grey pseudo-class-hover" value="input[type='button']"/>
-
-            </div>
-                      <div class="kss-modifier__name kss-style">
-              .c-button--with-arrow
-            </div>
-            <div class="kss-modifier__description kss-style">
-              This variation is used on links.
-            </div>
-            <div class="kss-modifier__example">
-              <a href="#" class="c-button c-button--with-arrow">Link Button</a>
-<button class="c-button c-button--with-arrow">Button Element</button>
-<input type="button" class="c-button c-button--with-arrow" value="input[type='button']"/>
-
-            </div>
-                      <div class="kss-modifier__name kss-style">
-              .c-button--header
-            </div>
-            <div class="kss-modifier__description kss-style">
-              This variation is used on header.
-            </div>
-            <div class="kss-modifier__example">
-              <a href="#" class="c-button c-button--header">Link Button</a>
-<button class="c-button c-button--header">Button Element</button>
-<input type="button" class="c-button c-button--header" value="input[type='button']"/>
 
             </div>
                   </div>
                   <div class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;a href=&quot;#&quot; class=&quot;c-button [modifier class]&quot;&gt;Link Button&lt;/a&gt;
-&lt;button class=&quot;c-button [modifier class]&quot;&gt;Button Element&lt;/button&gt;
-&lt;input type=&quot;button&quot; class=&quot;c-button [modifier class]&quot; value=&quot;input[type=&#039;button&#039;]&quot;/&gt;
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div style=&quot;background: [modifier class];&quot; class=&quot;styleguide-color&quot;&gt;[modifier class]&lt;/div&gt;
+
 </code></pre>
           </div>
               
               <div class="kss-source kss-style">
-          Source: <code>components/buttons/buttons.scss</code>, line 4
+          Source: <code>base/colors/colors.scss</code>, line 7
         </div>
           </section>
   </article>

@@ -5,26 +5,35 @@ $icon_width: 10px;
 //
 // Markup: buttons.twig
 //
-//.c-button--blue - This is the most common variation of the button. This should
-//                  be used on all of the submit buttons.
+//.c-button--blue - This is the most common variation of the button. This should be used on all of the submit buttons.
 //.c-button--blue:hover - The colors invert while the button is being hovered.
+//.c-button--blue:active - The background color is 6% of original background color in active state.
+//.c-button--green - This variation can be used to highligt primary button in situations where multiple primary buttons exist.
+//.c-button--green:hover - The colors invert while the button is being hovered.
+//.c-button--green:active - The background color is 6% of original background color in active state.
 //.c-button--grey - This variation should be used on secondary buttons.
 //.c-button--grey:hover - The colors invert while the button is being hovered.
 //.c-button--with-arrow - This variation is used on links.
+//.c-button--header - This variation is used on header.
 //
 // Style guide: buttons.call-to-action
 .c-button {
   font-size: 1em;
   line-height: 1.2em;
   display: inline-block;
-  margin: 0; // reset system.theme.css margin
+  margin-right: 0.5em;
   background-color: white;
   color: $paragraphs;
-  border: 1px solid $border-grey;
+  border: 1px solid $button-border-grey;
   border-radius: 5px;
   padding: 0.55em 17px;
+  vertical-align: top;
   &:hover, &.pseudo-class-hover {
-    background-color: $slightly-dark-grey;
+    border-color: $button-border-grey-active;
+    background-color: $button-bg-grey-hover;
+  }
+  &:active, &.pseudo-class-active {
+    background-color: $button-bg-grey-active;
   }
 }
 
@@ -35,6 +44,24 @@ $icon_width: 10px;
   &:hover, &.pseudo-class-hover {
     background-color: $white;
     color: $blue;
+  }
+  &:active, &.pseudo-class-active {
+    background-color: $white;
+    color: $blue;
+  }
+}
+
+.c-button--green {
+  background-color: $green;
+  color: $white;
+  border: 1px solid $green;
+  &:hover, &.pseudo-class-hover {
+    background-color: $white;
+    color: $green;
+  }
+  &:active, &.pseudo-class-active {
+    background: rgba($green, 0.06);
+    color: $green;
   }
 }
 
@@ -80,3 +107,27 @@ $icon_width: 10px;
   padding-left: 26px;
 }
 
+.c-button--header {
+  background: $white;
+  border-radius: 4px;
+  border: thin solid $button-border-grey;
+  display: block;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  .label {
+    color: $black;
+    display: inline;
+    font-weight: normal;
+    padding-right: 0.5em;
+  }
+}
+@media screen and (min-width: 769px) {
+  .c-button--header {
+    display: inline-block;
+    font-size: 1.125em;
+    margin-bottom: 0;
+  }
+}

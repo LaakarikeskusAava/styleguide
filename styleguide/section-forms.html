@@ -10,6 +10,7 @@
 
   <link rel="stylesheet" href="kss-assets/kss.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.structure.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.6.2/chosen.min.css">
 <link rel="stylesheet" href="public/styles.css">
 
 </head>
@@ -28,40 +29,45 @@
         </a>
       </li>
           <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-colors.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Colors</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-typography.html">
-          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Typography</span>
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Typography</span>
         </a>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-buttons.html">
-          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Buttons</span>
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Buttons</span>
         </a>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-lists.html">
-          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Lists</span>
+          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Lists</span>
         </a>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-forms.html">
-          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Forms</span>
+          <span class="kss-nav__ref">5</span><span class="kss-nav__name">Forms</span>
         </a>
                   <ul class="kss-nav__menu-child">
                       <li class="kss-nav__menu-item">
               <a class="kss-nav__menu-link" href="section-forms.html#kssref-forms-example">
-                <span class="kss-nav__ref ">4.1</span
+                <span class="kss-nav__ref ">5.1</span
                 ><span class="kss-nav__name">Example form</span>
               </a>
             </li>
                       <li class="kss-nav__menu-item">
               <a class="kss-nav__menu-link" href="section-forms.html#kssref-forms-select">
-                <span class="kss-nav__ref ">4.2</span
+                <span class="kss-nav__ref ">5.2</span
                 ><span class="kss-nav__name">Select</span>
               </a>
             </li>
                       <li class="kss-nav__menu-item">
               <a class="kss-nav__menu-link" href="section-forms.html#kssref-forms-slider">
-                <span class="kss-nav__ref ">4.3</span
+                <span class="kss-nav__ref ">5.3</span
                 ><span class="kss-nav__name">Slider</span>
               </a>
             </li>
@@ -69,22 +75,22 @@
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-navigation.html">
-          <span class="kss-nav__ref">5</span><span class="kss-nav__name">Navigation</span>
+          <span class="kss-nav__ref">6</span><span class="kss-nav__name">Navigation</span>
         </a>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-details.html">
-          <span class="kss-nav__ref">6</span><span class="kss-nav__name">Details</span>
+          <span class="kss-nav__ref">7</span><span class="kss-nav__name">Details</span>
         </a>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-loaders.html">
-          <span class="kss-nav__ref">7</span><span class="kss-nav__name">Loading effects</span>
+          <span class="kss-nav__ref">8</span><span class="kss-nav__name">Loading effects</span>
         </a>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-tables.html">
-          <span class="kss-nav__ref">8</span><span class="kss-nav__name">Tables</span>
+          <span class="kss-nav__ref">9</span><span class="kss-nav__name">Tables</span>
         </a>
               </li>
         </ul>
@@ -98,7 +104,7 @@
                 <h1 class="kss-title kss-title--level-1">
           <a class="kss-title__permalink" href="#kssref-forms">
             <span class="kss-title__ref">
-              4
+              5
               <span class="kss-title__permalink-hash">
                 forms
               </span>
@@ -116,7 +122,7 @@
 
       
               <div class="kss-source kss-style">
-          Source: <code>styles.scss</code>, line 28
+          Source: <code>styles.scss</code>, line 35
         </div>
           </div>
           <section id="kssref-forms-example" class="kss-section kss-section--depth-2">
@@ -124,7 +130,7 @@
                 <h2 class="kss-title kss-title--level-2">
           <a class="kss-title__permalink" href="#kssref-forms-example">
             <span class="kss-title__ref">
-              4.1
+              5.1
               <span class="kss-title__permalink-hash">
                 forms.example
               </span>
@@ -144,23 +150,30 @@
           <div class="kss-modifier__example">
             <form>
   <label for="name">Name</label>
-  <input type="text" id="name">
+  <input type="text" id="name" placeholder="Name">
+
+  <label for="tel">Telephone</label>
+  <input type="tel" id="tel">
 
   <label for="email">Email address</label>
   <input type="email" id="email">
+
+  <label for="textarea">Textarea</label>
+  <textarea id="textarea" class="form-textarea" rows="5" cols="60" placeholder=""></textarea>
 
   <label>
     <input type="checkbox"> Remember me
   </label>
 
   <label>
-    <input type="radio" name="herpderp" checked> Herp
+    <input type="radio" name="some_selection" checked> Option A
   </label>
   <label>
-    <input type="radio" name="herpderp"> Derp
+    <input type="radio" name="some_selection"> Option B
   </label>
 
-  <button class="c-button c-button--blue" type="submit">Submit</button>
+  <input type="submit" id="edit-submit" name="op" value="Submit" class="form-submit c-button c-button c-button--blue">
+  <a href="#" class="c-button button--secondary" id="edit-return-link">Reset</a>
 </form>
 
           </div>
@@ -169,23 +182,30 @@
                   <div class="kss-markup kss-style">
             <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;form&gt;
   &lt;label for=&quot;name&quot;&gt;Name&lt;/label&gt;
-  &lt;input type=&quot;text&quot; id=&quot;name&quot;&gt;
+  &lt;input type=&quot;text&quot; id=&quot;name&quot; placeholder=&quot;Name&quot;&gt;
+
+  &lt;label for=&quot;tel&quot;&gt;Telephone&lt;/label&gt;
+  &lt;input type=&quot;tel&quot; id=&quot;tel&quot;&gt;
 
   &lt;label for=&quot;email&quot;&gt;Email address&lt;/label&gt;
   &lt;input type=&quot;email&quot; id=&quot;email&quot;&gt;
+
+  &lt;label for=&quot;textarea&quot;&gt;Textarea&lt;/label&gt;
+  &lt;textarea id=&quot;textarea&quot; class=&quot;form-textarea&quot; rows=&quot;5&quot; cols=&quot;60&quot; placeholder=&quot;&quot;&gt;&lt;/textarea&gt;
 
   &lt;label&gt;
     &lt;input type=&quot;checkbox&quot;&gt; Remember me
   &lt;/label&gt;
 
   &lt;label&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;herpderp&quot; checked&gt; Herp
+    &lt;input type=&quot;radio&quot; name=&quot;some_selection&quot; checked&gt; Option A
   &lt;/label&gt;
   &lt;label&gt;
-    &lt;input type=&quot;radio&quot; name=&quot;herpderp&quot;&gt; Derp
+    &lt;input type=&quot;radio&quot; name=&quot;some_selection&quot;&gt; Option B
   &lt;/label&gt;
 
-  &lt;button class=&quot;c-button c-button--blue&quot; type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+  &lt;input type=&quot;submit&quot; id=&quot;edit-submit&quot; name=&quot;op&quot; value=&quot;Submit&quot; class=&quot;form-submit c-button c-button c-button--blue&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;c-button button--secondary&quot; id=&quot;edit-return-link&quot;&gt;Reset&lt;/a&gt;
 &lt;/form&gt;
 </code></pre>
           </div>
@@ -199,7 +219,7 @@
                 <h2 class="kss-title kss-title--level-2">
           <a class="kss-title__permalink" href="#kssref-forms-select">
             <span class="kss-title__ref">
-              4.2
+              5.2
               <span class="kss-title__permalink-hash">
                 forms.select
               </span>
@@ -218,7 +238,7 @@
           
           <div class="kss-modifier__example">
             <form>
-  <select>
+  <select class="chosen-select">
     <option>Choose</option>
     <option>Cat</option>
     <option>Tiger</option>
@@ -233,7 +253,7 @@
                   </div>
                   <div class="kss-markup kss-style">
             <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;form&gt;
-  &lt;select&gt;
+  &lt;select class=&quot;chosen-select&quot;&gt;
     &lt;option&gt;Choose&lt;/option&gt;
     &lt;option&gt;Cat&lt;/option&gt;
     &lt;option&gt;Tiger&lt;/option&gt;
@@ -254,7 +274,7 @@
                 <h2 class="kss-title kss-title--level-2">
           <a class="kss-title__permalink" href="#kssref-forms-slider">
             <span class="kss-title__ref">
-              4.3
+              5.3
               <span class="kss-title__permalink-hash">
                 forms.slider
               </span>
@@ -315,7 +335,9 @@
 </script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.6.2/chosen.jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="public/javascript/components/forms/select/select.js"></script>
 <script src="public/javascript/components/forms/slider/slider.js"></script>
 
 

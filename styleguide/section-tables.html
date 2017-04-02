@@ -10,6 +10,7 @@
 
   <link rel="stylesheet" href="kss-assets/kss.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.structure.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.6.2/chosen.min.css">
 <link rel="stylesheet" href="public/styles.css">
 
 </head>
@@ -28,60 +29,65 @@
         </a>
       </li>
           <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-colors.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Colors</span>
+        </a>
+              </li>
+          <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-typography.html">
-          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Typography</span>
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Typography</span>
         </a>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-buttons.html">
-          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Buttons</span>
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Buttons</span>
         </a>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-lists.html">
-          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Lists</span>
+          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Lists</span>
         </a>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-forms.html">
-          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Forms</span>
+          <span class="kss-nav__ref">5</span><span class="kss-nav__name">Forms</span>
         </a>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-navigation.html">
-          <span class="kss-nav__ref">5</span><span class="kss-nav__name">Navigation</span>
+          <span class="kss-nav__ref">6</span><span class="kss-nav__name">Navigation</span>
         </a>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-details.html">
-          <span class="kss-nav__ref">6</span><span class="kss-nav__name">Details</span>
+          <span class="kss-nav__ref">7</span><span class="kss-nav__name">Details</span>
         </a>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-loaders.html">
-          <span class="kss-nav__ref">7</span><span class="kss-nav__name">Loading effects</span>
+          <span class="kss-nav__ref">8</span><span class="kss-nav__name">Loading effects</span>
         </a>
               </li>
           <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-tables.html">
-          <span class="kss-nav__ref">8</span><span class="kss-nav__name">Tables</span>
+          <span class="kss-nav__ref">9</span><span class="kss-nav__name">Tables</span>
         </a>
                   <ul class="kss-nav__menu-child">
                       <li class="kss-nav__menu-item">
               <a class="kss-nav__menu-link" href="section-tables.html#kssref-tables-desktop">
-                <span class="kss-nav__ref ">8.1</span
+                <span class="kss-nav__ref ">9.1</span
                 ><span class="kss-nav__name">Table large screens</span>
               </a>
             </li>
                       <li class="kss-nav__menu-item">
               <a class="kss-nav__menu-link" href="section-tables.html#kssref-tables-mobile">
-                <span class="kss-nav__ref ">8.2</span
+                <span class="kss-nav__ref ">9.2</span
                 ><span class="kss-nav__name">Table small screens</span>
               </a>
             </li>
                       <li class="kss-nav__menu-item">
               <a class="kss-nav__menu-link" href="section-tables.html#kssref-tables-single-column">
-                <span class="kss-nav__ref ">8.3</span
+                <span class="kss-nav__ref ">9.3</span
                 ><span class="kss-nav__name">Table small screen single column</span>
               </a>
             </li>
@@ -98,7 +104,7 @@
                 <h1 class="kss-title kss-title--level-1">
           <a class="kss-title__permalink" href="#kssref-tables">
             <span class="kss-title__ref">
-              8
+              9
               <span class="kss-title__permalink-hash">
                 tables
               </span>
@@ -112,7 +118,7 @@
 
       
               <div class="kss-source kss-style">
-          Source: <code>styles.scss</code>, line 67
+          Source: <code>styles.scss</code>, line 75
         </div>
           </div>
           <section id="kssref-tables-desktop" class="kss-section kss-section--depth-2">
@@ -120,7 +126,7 @@
                 <h2 class="kss-title kss-title--level-2">
           <a class="kss-title__permalink" href="#kssref-tables-desktop">
             <span class="kss-title__ref">
-              8.1
+              9.1
               <span class="kss-title__permalink-hash">
                 tables.desktop
               </span>
@@ -144,54 +150,96 @@
           <div class="kss-modifier__example">
             <table class="table table--content ">
   <tr>
-          <th class="table__header">Pvm</th>
-          <th class="table__header">Diagnoosi</th>
-          <th class="table__header">Sairasloma</th>
-          <th class="table__header">Lääkäri</th>
-          <th class="table__header">Hoito</th>
-      </tr>
-      <tr class="table__row table__row--odd">
-              <td class="table__cell">1.11.2016</td>
-              <td class="table__cell">J38.3 Toiminnallinen äänihuulisalpaus (VCD)</td>
-              <td class="table__cell"><span class='whitespace-no-wrap'>Sairaus, 15pv</span></td>
-              <td class="table__cell"><a href='#'>Mikko Mikkonen</a></td>
-              <td class="table__cell"><a href='#'>Ohje</a></td>
-          </tr>
-      <tr class="table__row table__row--even">
-              <td class="table__cell">1.11.2016</td>
-              <td class="table__cell">A07.9 Määrittämätön suoliston alkueläintauti</td>
-              <td class="table__cell"><span class='whitespace-no-wrap'>Sairaus, 2pv</span></td>
-              <td class="table__cell"><a href='#'>Tuukka Tukkanen</a></td>
-              <td class="table__cell"><a href='#'>Ohje</a></td>
-          </tr>
-  </table>
+    
+      <th class="table__header">Pvm</th>
+    
+      <th class="table__header">Diagnoosi</th>
+    
+      <th class="table__header">Sairasloma</th>
+    
+      <th class="table__header">Lääkäri</th>
+    
+      <th class="table__header">Hoito</th>
+    
+  </tr>
+  
+    <tr class="table__row table__row--odd">
+      
+        <td class="table__cell">1.11.2016</td>
+      
+        <td class="table__cell">J38.3 Toiminnallinen äänihuulisalpaus (VCD)</td>
+      
+        <td class="table__cell"><span class='whitespace-no-wrap'>Sairaus, 15pv</span></td>
+      
+        <td class="table__cell"><a href='#'>Mikko Mikkonen</a></td>
+      
+        <td class="table__cell"><a href='#'>Ohje</a></td>
+      
+    </tr>
+  
+    <tr class="table__row table__row--even">
+      
+        <td class="table__cell">1.11.2016</td>
+      
+        <td class="table__cell">A07.9 Määrittämätön suoliston alkueläintauti</td>
+      
+        <td class="table__cell"><span class='whitespace-no-wrap'>Sairaus, 2pv</span></td>
+      
+        <td class="table__cell"><a href='#'>Tuukka Tukkanen</a></td>
+      
+        <td class="table__cell"><a href='#'>Ohje</a></td>
+      
+    </tr>
+  
+</table>
           </div>
 
                   </div>
                   <div class="kss-markup kss-style">
             <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;table table--content &quot;&gt;
   &lt;tr&gt;
-          &lt;th class=&quot;table__header&quot;&gt;Pvm&lt;/th&gt;
-          &lt;th class=&quot;table__header&quot;&gt;Diagnoosi&lt;/th&gt;
-          &lt;th class=&quot;table__header&quot;&gt;Sairasloma&lt;/th&gt;
-          &lt;th class=&quot;table__header&quot;&gt;Lääkäri&lt;/th&gt;
-          &lt;th class=&quot;table__header&quot;&gt;Hoito&lt;/th&gt;
-      &lt;/tr&gt;
-      &lt;tr class=&quot;table__row table__row--odd&quot;&gt;
-              &lt;td class=&quot;table__cell&quot;&gt;1.11.2016&lt;/td&gt;
-              &lt;td class=&quot;table__cell&quot;&gt;J38.3 Toiminnallinen äänihuulisalpaus (VCD)&lt;/td&gt;
-              &lt;td class=&quot;table__cell&quot;&gt;&lt;span class=&#039;whitespace-no-wrap&#039;&gt;Sairaus, 15pv&lt;/span&gt;&lt;/td&gt;
-              &lt;td class=&quot;table__cell&quot;&gt;&lt;a href=&#039;#&#039;&gt;Mikko Mikkonen&lt;/a&gt;&lt;/td&gt;
-              &lt;td class=&quot;table__cell&quot;&gt;&lt;a href=&#039;#&#039;&gt;Ohje&lt;/a&gt;&lt;/td&gt;
-          &lt;/tr&gt;
-      &lt;tr class=&quot;table__row table__row--even&quot;&gt;
-              &lt;td class=&quot;table__cell&quot;&gt;1.11.2016&lt;/td&gt;
-              &lt;td class=&quot;table__cell&quot;&gt;A07.9 Määrittämätön suoliston alkueläintauti&lt;/td&gt;
-              &lt;td class=&quot;table__cell&quot;&gt;&lt;span class=&#039;whitespace-no-wrap&#039;&gt;Sairaus, 2pv&lt;/span&gt;&lt;/td&gt;
-              &lt;td class=&quot;table__cell&quot;&gt;&lt;a href=&#039;#&#039;&gt;Tuukka Tukkanen&lt;/a&gt;&lt;/td&gt;
-              &lt;td class=&quot;table__cell&quot;&gt;&lt;a href=&#039;#&#039;&gt;Ohje&lt;/a&gt;&lt;/td&gt;
-          &lt;/tr&gt;
-  &lt;/table&gt;</code></pre>
+    
+      &lt;th class=&quot;table__header&quot;&gt;Pvm&lt;/th&gt;
+    
+      &lt;th class=&quot;table__header&quot;&gt;Diagnoosi&lt;/th&gt;
+    
+      &lt;th class=&quot;table__header&quot;&gt;Sairasloma&lt;/th&gt;
+    
+      &lt;th class=&quot;table__header&quot;&gt;Lääkäri&lt;/th&gt;
+    
+      &lt;th class=&quot;table__header&quot;&gt;Hoito&lt;/th&gt;
+    
+  &lt;/tr&gt;
+  
+    &lt;tr class=&quot;table__row table__row--odd&quot;&gt;
+      
+        &lt;td class=&quot;table__cell&quot;&gt;1.11.2016&lt;/td&gt;
+      
+        &lt;td class=&quot;table__cell&quot;&gt;J38.3 Toiminnallinen äänihuulisalpaus (VCD)&lt;/td&gt;
+      
+        &lt;td class=&quot;table__cell&quot;&gt;&lt;span class=&#039;whitespace-no-wrap&#039;&gt;Sairaus, 15pv&lt;/span&gt;&lt;/td&gt;
+      
+        &lt;td class=&quot;table__cell&quot;&gt;&lt;a href=&#039;#&#039;&gt;Mikko Mikkonen&lt;/a&gt;&lt;/td&gt;
+      
+        &lt;td class=&quot;table__cell&quot;&gt;&lt;a href=&#039;#&#039;&gt;Ohje&lt;/a&gt;&lt;/td&gt;
+      
+    &lt;/tr&gt;
+  
+    &lt;tr class=&quot;table__row table__row--even&quot;&gt;
+      
+        &lt;td class=&quot;table__cell&quot;&gt;1.11.2016&lt;/td&gt;
+      
+        &lt;td class=&quot;table__cell&quot;&gt;A07.9 Määrittämätön suoliston alkueläintauti&lt;/td&gt;
+      
+        &lt;td class=&quot;table__cell&quot;&gt;&lt;span class=&#039;whitespace-no-wrap&#039;&gt;Sairaus, 2pv&lt;/span&gt;&lt;/td&gt;
+      
+        &lt;td class=&quot;table__cell&quot;&gt;&lt;a href=&#039;#&#039;&gt;Tuukka Tukkanen&lt;/a&gt;&lt;/td&gt;
+      
+        &lt;td class=&quot;table__cell&quot;&gt;&lt;a href=&#039;#&#039;&gt;Ohje&lt;/a&gt;&lt;/td&gt;
+      
+    &lt;/tr&gt;
+  
+&lt;/table&gt;</code></pre>
           </div>
               
               <div class="kss-source kss-style">
@@ -203,7 +251,7 @@
                 <h2 class="kss-title kss-title--level-2">
           <a class="kss-title__permalink" href="#kssref-tables-mobile">
             <span class="kss-title__ref">
-              8.2
+              9.2
               <span class="kss-title__permalink-hash">
                 tables.mobile
               </span>
@@ -228,51 +276,80 @@
             </div>
           
           <div class="kss-modifier__example">
-            <table class="table table--content table--mobile table--two-column [modifier class]">    <tbody class="table__row table__row--odd">
-              <tr class="table__sub-row">
-            <td class="table__cell">1.11.2016</td>                                  <td class="table__cell">
+            <table class="table table--content table--mobile table--two-column [modifier class]">
+    <tbody class="table__row table__row--odd">
+      
+        <tr class="table__sub-row">
+            <td class="table__cell">1.11.2016</td>
+        
+      
+        
+            <td class="table__cell">
               <strong>J38.3 Toiminnallinen äänihuulisalpaus (VCD)</strong>
             </td>
           </tr>
-                      <tr class="table__sub-row">
+        
+      
+        <tr class="table__sub-row">
             <td class="table__cell">
               <span class="table__label">Sairasloma</span>
             </td>
             <td class="table__cell"><span class='whitespace-no-wrap'>Sairaus, 15pv</span></td>
-          </tr>              <tr class="table__sub-row">
+          </tr>
+      
+        <tr class="table__sub-row">
             <td class="table__cell">
               <span class="table__label">Lääkäri</span>
             </td>
             <td class="table__cell"><a href='#'>Mikko Mikkonen</a></td>
-          </tr>              <tr class="table__sub-row">
+          </tr>
+      
+        <tr class="table__sub-row">
             <td class="table__cell">
               <span class="table__label">Hoito</span>
             </td>
             <td class="table__cell"><a href='#'>Ohje</a></td>
-          </tr>          </tbody>
-      <tbody class="table__row table__row--even">
-              <tr class="table__sub-row">
-            <td class="table__cell">1.11.2016</td>                                  <td class="table__cell">
+          </tr>
+      
+    </tbody>
+  
+    <tbody class="table__row table__row--even">
+      
+        <tr class="table__sub-row">
+            <td class="table__cell">1.11.2016</td>
+        
+      
+        
+            <td class="table__cell">
               <strong>A07.9 Määrittämätön suoliston alkueläintauti</strong>
             </td>
           </tr>
-                      <tr class="table__sub-row">
+        
+      
+        <tr class="table__sub-row">
             <td class="table__cell">
               <span class="table__label">Sairasloma</span>
             </td>
             <td class="table__cell"><span class='whitespace-no-wrap'>Sairaus, 2pv</span></td>
-          </tr>              <tr class="table__sub-row">
+          </tr>
+      
+        <tr class="table__sub-row">
             <td class="table__cell">
               <span class="table__label">Lääkäri</span>
             </td>
             <td class="table__cell"><a href='#'>Tuukka Tukkanen</a></td>
-          </tr>              <tr class="table__sub-row">
+          </tr>
+      
+        <tr class="table__sub-row">
             <td class="table__cell">
               <span class="table__label">Hoito</span>
             </td>
             <td class="table__cell"><a href='#'>Ohje</a></td>
-          </tr>          </tbody>
-  </table>
+          </tr>
+      
+    </tbody>
+  
+</table>
 
           </div>
 
@@ -283,100 +360,158 @@
               Table that requires labels visible on the mobile.
             </div>
             <div class="kss-modifier__example">
-              <table class="table table--content table--mobile table--two-column table--mobile-headers">    <tbody class="table__row table__row--odd">
-              <tr class="table__sub-row">
-            <td class="table__cell">1.11.2016</td>                                  <td class="table__cell">
+              <table class="table table--content table--mobile table--two-column table--mobile-headers">
+    <tbody class="table__row table__row--odd">
+      
+        <tr class="table__sub-row">
+            <td class="table__cell">1.11.2016</td>
+        
+      
+        
+            <td class="table__cell">
               <strong>J38.3 Toiminnallinen äänihuulisalpaus (VCD)</strong>
             </td>
           </tr>
-                      <tr class="table__sub-row">
+        
+      
+        <tr class="table__sub-row">
             <td class="table__cell">
               <span class="table__label">Sairasloma</span>
             </td>
             <td class="table__cell"><span class='whitespace-no-wrap'>Sairaus, 15pv</span></td>
-          </tr>              <tr class="table__sub-row">
+          </tr>
+      
+        <tr class="table__sub-row">
             <td class="table__cell">
               <span class="table__label">Lääkäri</span>
             </td>
             <td class="table__cell"><a href='#'>Mikko Mikkonen</a></td>
-          </tr>              <tr class="table__sub-row">
+          </tr>
+      
+        <tr class="table__sub-row">
             <td class="table__cell">
               <span class="table__label">Hoito</span>
             </td>
             <td class="table__cell"><a href='#'>Ohje</a></td>
-          </tr>          </tbody>
-      <tbody class="table__row table__row--even">
-              <tr class="table__sub-row">
-            <td class="table__cell">1.11.2016</td>                                  <td class="table__cell">
+          </tr>
+      
+    </tbody>
+  
+    <tbody class="table__row table__row--even">
+      
+        <tr class="table__sub-row">
+            <td class="table__cell">1.11.2016</td>
+        
+      
+        
+            <td class="table__cell">
               <strong>A07.9 Määrittämätön suoliston alkueläintauti</strong>
             </td>
           </tr>
-                      <tr class="table__sub-row">
+        
+      
+        <tr class="table__sub-row">
             <td class="table__cell">
               <span class="table__label">Sairasloma</span>
             </td>
             <td class="table__cell"><span class='whitespace-no-wrap'>Sairaus, 2pv</span></td>
-          </tr>              <tr class="table__sub-row">
+          </tr>
+      
+        <tr class="table__sub-row">
             <td class="table__cell">
               <span class="table__label">Lääkäri</span>
             </td>
             <td class="table__cell"><a href='#'>Tuukka Tukkanen</a></td>
-          </tr>              <tr class="table__sub-row">
+          </tr>
+      
+        <tr class="table__sub-row">
             <td class="table__cell">
               <span class="table__label">Hoito</span>
             </td>
             <td class="table__cell"><a href='#'>Ohje</a></td>
-          </tr>          </tbody>
-  </table>
+          </tr>
+      
+    </tbody>
+  
+</table>
 
             </div>
                   </div>
                   <div class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;table table--content table--mobile table--two-column [modifier class]&quot;&gt;    &lt;tbody class=&quot;table__row table__row--odd&quot;&gt;
-              &lt;tr class=&quot;table__sub-row&quot;&gt;
-            &lt;td class=&quot;table__cell&quot;&gt;1.11.2016&lt;/td&gt;                                  &lt;td class=&quot;table__cell&quot;&gt;
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;table table--content table--mobile table--two-column [modifier class]&quot;&gt;
+    &lt;tbody class=&quot;table__row table__row--odd&quot;&gt;
+      
+        &lt;tr class=&quot;table__sub-row&quot;&gt;
+            &lt;td class=&quot;table__cell&quot;&gt;1.11.2016&lt;/td&gt;
+        
+      
+        
+            &lt;td class=&quot;table__cell&quot;&gt;
               &lt;strong&gt;J38.3 Toiminnallinen äänihuulisalpaus (VCD)&lt;/strong&gt;
             &lt;/td&gt;
           &lt;/tr&gt;
-                      &lt;tr class=&quot;table__sub-row&quot;&gt;
+        
+      
+        &lt;tr class=&quot;table__sub-row&quot;&gt;
             &lt;td class=&quot;table__cell&quot;&gt;
               &lt;span class=&quot;table__label&quot;&gt;Sairasloma&lt;/span&gt;
             &lt;/td&gt;
             &lt;td class=&quot;table__cell&quot;&gt;&lt;span class=&#039;whitespace-no-wrap&#039;&gt;Sairaus, 15pv&lt;/span&gt;&lt;/td&gt;
-          &lt;/tr&gt;              &lt;tr class=&quot;table__sub-row&quot;&gt;
+          &lt;/tr&gt;
+      
+        &lt;tr class=&quot;table__sub-row&quot;&gt;
             &lt;td class=&quot;table__cell&quot;&gt;
               &lt;span class=&quot;table__label&quot;&gt;Lääkäri&lt;/span&gt;
             &lt;/td&gt;
             &lt;td class=&quot;table__cell&quot;&gt;&lt;a href=&#039;#&#039;&gt;Mikko Mikkonen&lt;/a&gt;&lt;/td&gt;
-          &lt;/tr&gt;              &lt;tr class=&quot;table__sub-row&quot;&gt;
+          &lt;/tr&gt;
+      
+        &lt;tr class=&quot;table__sub-row&quot;&gt;
             &lt;td class=&quot;table__cell&quot;&gt;
               &lt;span class=&quot;table__label&quot;&gt;Hoito&lt;/span&gt;
             &lt;/td&gt;
             &lt;td class=&quot;table__cell&quot;&gt;&lt;a href=&#039;#&#039;&gt;Ohje&lt;/a&gt;&lt;/td&gt;
-          &lt;/tr&gt;          &lt;/tbody&gt;
-      &lt;tbody class=&quot;table__row table__row--even&quot;&gt;
-              &lt;tr class=&quot;table__sub-row&quot;&gt;
-            &lt;td class=&quot;table__cell&quot;&gt;1.11.2016&lt;/td&gt;                                  &lt;td class=&quot;table__cell&quot;&gt;
+          &lt;/tr&gt;
+      
+    &lt;/tbody&gt;
+  
+    &lt;tbody class=&quot;table__row table__row--even&quot;&gt;
+      
+        &lt;tr class=&quot;table__sub-row&quot;&gt;
+            &lt;td class=&quot;table__cell&quot;&gt;1.11.2016&lt;/td&gt;
+        
+      
+        
+            &lt;td class=&quot;table__cell&quot;&gt;
               &lt;strong&gt;A07.9 Määrittämätön suoliston alkueläintauti&lt;/strong&gt;
             &lt;/td&gt;
           &lt;/tr&gt;
-                      &lt;tr class=&quot;table__sub-row&quot;&gt;
+        
+      
+        &lt;tr class=&quot;table__sub-row&quot;&gt;
             &lt;td class=&quot;table__cell&quot;&gt;
               &lt;span class=&quot;table__label&quot;&gt;Sairasloma&lt;/span&gt;
             &lt;/td&gt;
             &lt;td class=&quot;table__cell&quot;&gt;&lt;span class=&#039;whitespace-no-wrap&#039;&gt;Sairaus, 2pv&lt;/span&gt;&lt;/td&gt;
-          &lt;/tr&gt;              &lt;tr class=&quot;table__sub-row&quot;&gt;
+          &lt;/tr&gt;
+      
+        &lt;tr class=&quot;table__sub-row&quot;&gt;
             &lt;td class=&quot;table__cell&quot;&gt;
               &lt;span class=&quot;table__label&quot;&gt;Lääkäri&lt;/span&gt;
             &lt;/td&gt;
             &lt;td class=&quot;table__cell&quot;&gt;&lt;a href=&#039;#&#039;&gt;Tuukka Tukkanen&lt;/a&gt;&lt;/td&gt;
-          &lt;/tr&gt;              &lt;tr class=&quot;table__sub-row&quot;&gt;
+          &lt;/tr&gt;
+      
+        &lt;tr class=&quot;table__sub-row&quot;&gt;
             &lt;td class=&quot;table__cell&quot;&gt;
               &lt;span class=&quot;table__label&quot;&gt;Hoito&lt;/span&gt;
             &lt;/td&gt;
             &lt;td class=&quot;table__cell&quot;&gt;&lt;a href=&#039;#&#039;&gt;Ohje&lt;/a&gt;&lt;/td&gt;
-          &lt;/tr&gt;          &lt;/tbody&gt;
-  &lt;/table&gt;
+          &lt;/tr&gt;
+      
+    &lt;/tbody&gt;
+  
+&lt;/table&gt;
 </code></pre>
           </div>
               
@@ -389,7 +524,7 @@
                 <h2 class="kss-title kss-title--level-2">
           <a class="kss-title__permalink" href="#kssref-tables-single-column">
             <span class="kss-title__ref">
-              8.3
+              9.3
               <span class="kss-title__permalink-hash">
                 tables.single-column
               </span>
@@ -412,35 +547,45 @@
           
           <div class="kss-modifier__example">
             <table class="table table--content table--mobile table--single-column ">
+
     <tr class="table__row table__row--odd">
       <td class="table__cell">
         <div class="table__content">1.11.2016</div><div class="table__content">J38.3 Toiminnallinen äänihuulisalpaus (VCD)</div><div class="table__content"><span class='whitespace-no-wrap'>Sairaus, 15pv</span></div><div class="table__content"><a href='#'>Mikko Mikkonen</a></div><div class="table__content"><a href='#'>Ohje</a></div>
+
       </td>
     </tr>
   
+
     <tr class="table__row table__row--even">
       <td class="table__cell">
         <div class="table__content">1.11.2016</div><div class="table__content">A07.9 Määrittämätön suoliston alkueläintauti</div><div class="table__content"><span class='whitespace-no-wrap'>Sairaus, 2pv</span></div><div class="table__content"><a href='#'>Tuukka Tukkanen</a></div><div class="table__content"><a href='#'>Ohje</a></div>
+
       </td>
     </tr>
-  </table>
+  
+</table>
           </div>
 
                   </div>
                   <div class="kss-markup kss-style">
             <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;table class=&quot;table table--content table--mobile table--single-column &quot;&gt;
+
     &lt;tr class=&quot;table__row table__row--odd&quot;&gt;
       &lt;td class=&quot;table__cell&quot;&gt;
         &lt;div class=&quot;table__content&quot;&gt;1.11.2016&lt;/div&gt;&lt;div class=&quot;table__content&quot;&gt;J38.3 Toiminnallinen äänihuulisalpaus (VCD)&lt;/div&gt;&lt;div class=&quot;table__content&quot;&gt;&lt;span class=&#039;whitespace-no-wrap&#039;&gt;Sairaus, 15pv&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;table__content&quot;&gt;&lt;a href=&#039;#&#039;&gt;Mikko Mikkonen&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;table__content&quot;&gt;&lt;a href=&#039;#&#039;&gt;Ohje&lt;/a&gt;&lt;/div&gt;
+
       &lt;/td&gt;
     &lt;/tr&gt;
   
+
     &lt;tr class=&quot;table__row table__row--even&quot;&gt;
       &lt;td class=&quot;table__cell&quot;&gt;
         &lt;div class=&quot;table__content&quot;&gt;1.11.2016&lt;/div&gt;&lt;div class=&quot;table__content&quot;&gt;A07.9 Määrittämätön suoliston alkueläintauti&lt;/div&gt;&lt;div class=&quot;table__content&quot;&gt;&lt;span class=&#039;whitespace-no-wrap&#039;&gt;Sairaus, 2pv&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;table__content&quot;&gt;&lt;a href=&#039;#&#039;&gt;Tuukka Tukkanen&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;table__content&quot;&gt;&lt;a href=&#039;#&#039;&gt;Ohje&lt;/a&gt;&lt;/div&gt;
+
       &lt;/td&gt;
     &lt;/tr&gt;
-  &lt;/table&gt;</code></pre>
+  
+&lt;/table&gt;</code></pre>
           </div>
               
               <div class="kss-source kss-style">
@@ -462,7 +607,9 @@
 </script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.6.2/chosen.jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="public/javascript/components/forms/select/select.js"></script>
 <script src="public/javascript/components/forms/slider/slider.js"></script>
 
 
