@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" href="kss-assets/kss.css">
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.structure.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.6.2/chosen.min.css">
 <link rel="stylesheet" href="public/styles.css">
 
@@ -292,29 +292,27 @@
 
           
           <div class="kss-modifier__example">
-            
-  <div class="slider slider-demo js-slider" data-min="0" data-max="10">
-    <span class="slider__min">0</span>
-    <div class="slider__path js-slider-path">
-      <span class="slider__handle js-slider-handle ui-slider-handle"></span>
-    </div>
-    <span class="slider__max">10</span>
+            <div class="slider js-slider" data-min="0" data-max="10">
+  <span class="slider__min">0</span>
+  <span class="slider__input js-slider-input visually-hidden"><input type="range" min="0" max="10" value="5"></span>
+  <div class="slider__path js-slider-path">
+    <span class="slider__handle js-slider-handle ui-slider-handle"></span>
   </div>
-
+  <span class="slider__max">10</span>
+</div>
 
           </div>
 
                   </div>
                   <div class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">
-  &lt;div class=&quot;slider slider-demo js-slider&quot; data-min=&quot;0&quot; data-max=&quot;10&quot;&gt;
-    &lt;span class=&quot;slider__min&quot;&gt;0&lt;/span&gt;
-    &lt;div class=&quot;slider__path js-slider-path&quot;&gt;
-      &lt;span class=&quot;slider__handle js-slider-handle ui-slider-handle&quot;&gt;&lt;/span&gt;
-    &lt;/div&gt;
-    &lt;span class=&quot;slider__max&quot;&gt;10&lt;/span&gt;
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;slider js-slider&quot; data-min=&quot;0&quot; data-max=&quot;10&quot;&gt;
+  &lt;span class=&quot;slider__min&quot;&gt;0&lt;/span&gt;
+  &lt;span class=&quot;slider__input js-slider-input visually-hidden&quot;&gt;&lt;input type=&quot;range&quot; min=&quot;0&quot; max=&quot;10&quot; value=&quot;5&quot;&gt;&lt;/span&gt;
+  &lt;div class=&quot;slider__path js-slider-path&quot;&gt;
+    &lt;span class=&quot;slider__handle js-slider-handle ui-slider-handle&quot;&gt;&lt;/span&gt;
   &lt;/div&gt;
-
+  &lt;span class=&quot;slider__max&quot;&gt;10&lt;/span&gt;
+&lt;/div&gt;
 </code></pre>
           </div>
               
@@ -338,8 +336,9 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.6.2/chosen.jquery.min.js"></script>
-<script src="../styles/components/forms/select/select.js"></script>
-<script src="../styles/components/forms/slider/slider.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="public/javascript/components/forms/select/select.js"></script>
+<script src="public/javascript/components/forms/slider/slider.js"></script>
 
 
 

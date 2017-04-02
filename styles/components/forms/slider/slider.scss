@@ -4,46 +4,46 @@
 //
 // Style guide: forms.slider
 .slider {
+  background: #fff;
   color: $border-dark-grey;
   position: relative;
   border: 1px solid $border-grey-v2;
-  padding: 30px 60px;
+  border-radius: 3px;
+  padding: 20px 60px 20px 55px;
+  margin-top: .4em;
+
+  // Nested selector is used to add specificity to override jQuerui UI styles.
+  .slider__handle {
+    width: 2em;
+    height: 2em;
+    border-radius: 100px;
+    top: 50%;
+    margin-top: -1em;
+    margin-left: -1em;
+    text-align: center;
+    line-height: 2em;
+    padding: 0 1px 0 0;
+    background: $navigation-background;
+    color: $white;
+    cursor: pointer;
+    border: 0;
+  }
 }
 
 .slider__max {
   position: absolute;
-  top: 25px;
+  top: 14px;
   right: 21px;
 }
+
 .slider__min {
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 14px;
+  left: 23px;
 }
 
-/**
- * Jquery UI overrides.
- */
-.ui-slider .slider__handle.ui-slider-handle {
-  width: 2em;
-  height: 2em;
-  border-radius: 100px;
-  top: 50%;
-  margin-top: -1.05em;
-  margin-left: -1.2em;
-  text-align: center;
-  line-height: 2em;
-  padding: 1px 1px 0 0;
-  background: $navigation-background;
-  color: $white;
-  cursor: pointer;
-  border: none;
-}
-
-.ui-slider .slider__handle.ui-slider-handle:active {
-  border: none;
-}
-
-.ui-slider.ui-widget.ui-widget-content {
+.slider__path {
+  background: #fbfbfb;
   border: 1px solid $border-grey-v2;
+  border-radius: 3px;
 }

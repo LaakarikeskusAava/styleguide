@@ -22,7 +22,7 @@ options.styleGuide = {
   destination: options.rootPath.styleGuide,
   mask: /\.sass|\.scss/,
   css: [
-    'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.structure.css',
     'https://cdnjs.cloudflare.com/ajax/libs/chosen/1.6.2/chosen.min.css',
     'public/styles.css'
   ],
@@ -30,8 +30,9 @@ options.styleGuide = {
     'https://code.jquery.com/jquery-1.12.4.js',
     'https://code.jquery.com/ui/1.12.0/jquery-ui.min.js',
     'https://cdnjs.cloudflare.com/ajax/libs/chosen/1.6.2/chosen.jquery.min.js',
-    path.relative(options.rootPath.styleGuide, options.rootPath.styles + 'components/forms/select/select.js'),
-    path.relative(options.rootPath.styleGuide, options.rootPath.styles + 'components/forms/slider/slider.js')
+    'https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js',
+    'public/javascript/components/forms/select/select.js',
+    'public/javascript/components/forms/slider/slider.js'
   ],
   homepage: 'styleguide.md',
   title: 'Aava Styleguide'
@@ -58,7 +59,11 @@ gulp.task('images', function() {
   gulp.src(['styles/images/**'])
     .pipe(gulp.dest('styleguide/public/images'));
 });
+gulp.task('javascript', function() {
+  gulp.src(['styles/**/*.js'])
+    .pipe(gulp.dest('styleguide/public/javascript'));
+});
 
 gulp.task('default', function() {
-  runSequence(['clean', 'styleguide'], 'compass', 'images');
+  runSequence(['clean', 'styleguide'], 'compass', 'images', 'javascript');
 });
